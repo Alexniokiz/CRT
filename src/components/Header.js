@@ -16,7 +16,10 @@ const Header = () => {
         <>
             <div className="bar-title">
                 <div className="container-nav">
-                    <img src={logo} className="title"></img>
+                    <div style={{display: "flex"}}>
+                        <img src={logo} className="title"></img>
+                        <p style={{paddingLeft: "16px"}} className="title">TRILLIONAIRE THUGS</p>
+                    </div>
                     <Socials />
                 </div>
             </div>
@@ -67,7 +70,7 @@ const Header = () => {
             <div className="bar-title2">
                 <p className="text-title">CryptoPunk is the new reference of today</p>
             </div>
-            <div className="bar-mid">
+            <div className="bar-mid" style={{height: "90px"}}>
                 <p className="text-paragraph">The Crazy Camels is a collection of 2’000 Non Fungible Tokens (NFT). The Camels are stored as ERC- tokens on the Ethereum 
 Blockchain and hosted on IPFS. Each Crazy Camel is 100% unique and is programmatically generated from + hand-drawn
 traits. Each Crazy Camel comes with a membership to The Tribe - an exclusive group with wonderful perks.</p>

@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "Brandon";
+  src: url("./assets/brandon-grotesque-black-58a8a3e824392.otf");
+}
+
+@font-face {
   font-family: "LouisGeorge";
   src: url("./assets/Louis\ George\ Cafe.ttf");
 }

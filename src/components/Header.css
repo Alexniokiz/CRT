@@ -1,8 +1,10 @@
 .title {
-    font-family: "Eveleth";
-    color: #fff;
-    font-size: 45px;
+    font-family: "Brandon";
+    color: #e8e7e4;
+    font-size: 29px;
     margin: auto 0;
+    padding-left: 5px;
+    letter-spacing: 1.3px;
 }
 
 .bar-title {
@@ -92,6 +94,7 @@
     height: auto;
     margin: auto 0;
     width: fit-content;
+    line-height: 1.4;
 }
 
 .container-nav {
@@ -343,7 +346,9 @@ p {
     padding: 15px 0!important;
     /* top: 25px!important; */
 }
-
+.styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-content__QOGZd .styles_row-content-text__2sgAB {
+    line-height: 1.5!important;
+}
 .arrow-image {
     top: 25px!important;
 }

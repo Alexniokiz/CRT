@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Header.css"
 
 import Faq from "react-faq-component";
@@ -36,16 +36,17 @@ const styles = {
 };
 
 const FaqSection = () => {
+    const [rows, setRowsOption] = useState(null);
     return (
         <div>
             <div className="bar-mid-top"></div>
             <div className="bar-title2">
                     <p className="text-title inside" style={{color: 'white'}}>FAQ</p>
                 </div>
-            <div className="bar-mid" style={{height: '800px'}}>
+            <div className="bar-mid" style={{height: '585px'}}>
                 <div style={{display: "flex", maxWidth: '1150px'}}>
                     <div className="decimal-text inside"></div>
-                    <Faq data={data} styles={styles}/>
+                    <Faq data={data} styles={styles} getRowOptions={setRowsOption} />
                 </div>
             </div>
             <div className="bar-bottom"></div>
