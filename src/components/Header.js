@@ -5,7 +5,7 @@ import Socials from './Socials';
 
 import leftShadow from '../assets/left_big_img.png'
 import mainImage1 from '../assets/big_img1.png'
-
+import logo from '../assets/logo.png'
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
@@ -16,7 +16,7 @@ const Header = () => {
         <>
             <div className="bar-title">
                 <div className="container-nav">
-                    <p className="title">CRT.</p>
+                    <img src={logo} className="title"></img>
                     <Socials />
                 </div>
             </div>
