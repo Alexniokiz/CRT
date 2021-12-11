@@ -20,13 +20,13 @@ const Header = () => {
                     <Socials />
                 </div>
             </div>
-            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', minWidth: 'max-content'}}>
                 {/* <img src={leftShadow}/>
                 <img src={mainImage1}/>
                 <img src={leftShadow}/> */}
                 <div className="container-left">
                 </div>
-                    <AutoplaySlider play={true} buttons={true} interval={3000}>
+                    <AutoplaySlider play={false} buttons={true} interval={3000}>
                         <div className="container-main">
                             <div className="text-main">
                                 {/* <div className="glitch" style={{fontSize: "158px"}}>
@@ -45,17 +45,18 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="container-main2">
-                            <div className="text-main">
-                                <span style={{fontSize: "158px"}}>15</span>
-                                <span style={{fontSize: "95px", color: "white"}}>DAYS</span>
-                                <span style={{fontSize: "55px", color: "white"}}>BEFORE</span>
+                            <div className="text-main" style={{paddingTop: '230px'}}>
+                                <span style={{fontSize: "88px"}}>RELEASE</span>
+                                <span style={{fontSize: "125px", color: "white"}}>EARLY</span>
+                                <span style={{fontSize: "81px", color: "white"}}>JANUARY</span>
                             </div>
                         </div>
                         <div className="container-main3">
                             <div className="text-main">
-                                <span style={{fontSize: "158px"}}>15</span>
-                                <span style={{fontSize: "95px", color: "white"}}>DAYS</span>
-                                <span style={{fontSize: "86px", color: "white"}}>BEFORE</span>
+                                <span style={{fontSize: "171px"}}>GET</span>
+                                <span style={{fontSize: "85px", color: "white"}}>ACCESS</span>
+                                <span style={{fontSize: "95px", color: "white"}}>TO THE</span>
+                                <span style={{fontSize: "63px", color: "white"}}>WHITELIST</span>
                             </div>
                         </div>
                     </AutoplaySlider>

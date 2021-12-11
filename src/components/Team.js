@@ -15,7 +15,7 @@ const Team = () => {
                     <div className="decimal-text inside"></div>
                     <div style={{display: "flex", height: 'fit-content', flexWrap: 'wrap'}}>
                         <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
-                        <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
+                        <Profile name="ALEXANDRE ARNAUD" status="CO-FOUNDER"/>
                         <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
                         <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
                         <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
