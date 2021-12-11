@@ -13,9 +13,12 @@
   src: url("./assets/Louis\ George\ Cafe\ Bold.ttf");
 }
 .App {
-  background-color: #242426;
+  /* background: url("./assets/fondsale.png"), #242426; */
   height: 100vh;
 }
 html {
-  background-color: #242426;
+  background: url("./assets/fondsale.png"), #242426;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%
 }

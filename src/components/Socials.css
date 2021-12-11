@@ -25,7 +25,6 @@
 
 .link-social {
     font-family: "LouisGeorgeBold";
-    margin-right: 15px;
     color: white;
     display: inline-flex;
     -webkit-box-align: center;
@@ -48,6 +47,7 @@
     text-transform: uppercase;
     min-width: 64px;
     padding: 10px;
+    margin-right: 10px;
     transition: all 450ms ease;
 }
 
