@@ -17,6 +17,9 @@
   font-family: "LouisGeorgeBold";
   src: url("./assets/Louis\ George\ Cafe\ Bold.ttf");
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .App {
   /* background: url("./assets/fondsale.png"), #242426; */
   height: 100vh;

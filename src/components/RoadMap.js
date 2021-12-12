@@ -15,7 +15,7 @@ const RoadMap = () => {
         }
     })
     useEffect(() => {
-        AOS.init({ duration: 1000, once: false, offset: 600 });
+        AOS.init({ duration: 1000, once: false, offset: 300 });
     }, [])
     return (
         <div>
@@ -23,7 +23,7 @@ const RoadMap = () => {
             <div className="bar-title2">
                 <p className="text-title inside" style={{color: 'white'}}>ROADMAP</p>
             </div>
-            <div className="bar-mid" style={{height: '2000px'}}>
+            <div className="bar-mid">
                 <div style={{display: 'flex', flexDirection: 'row', maxWidth: '1150px'}}>
                     <div className="decimal-text inside"></div>
                     <div>
@@ -50,7 +50,10 @@ const RoadMap = () => {
                         } className="progress-full" style={{height: width+'px'}}></div>
                     </div>
                     <div style={{paddingTop: '25px'}}>
-                        <div data-aos="fade-left" className="carton"></div>
+                        <div data-aos="fade-left" className="carton">
+                            <p className="title-description">JANUARY 2022</p>
+                            <p className="contenu-description">Lorem ipsum dolor sit amet, consectetur adip</p>
+                        </div>
                         <div data-aos="fade-left"  className="carton"></div>
                         <div data-aos="fade-left"  className="carton"></div>
                         <div data-aos="fade-left"  className="carton"></div>

@@ -1,0 +1,13 @@
+.card-to-rotate {
+    background: url('../assets/tugoune.png');
+    width: 391px;
+    height: 477px;
+    margin: auto;
+    animation: 2s ease infinite alternate-reverse slidein;
+    transform-style: preserve-3d;
+    transform: rotateZ(8deg)
+}
+
+
+@-webkit-keyframes slidein { from { will-change: transform; transform: translate3d(0.0027px, 0.0021px, 0px) scale3d(1, 1, 1) rotateX(-0.0021deg) rotateY(0.0027deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;} to {  will-change: transform; transform: translate3d(0.0027px, 0.0021px, 0px) scale3d(1, 1, 1) rotateX(-0.0021deg) rotateY(0.0027deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; }  }
+        @keyframes slidein {from { transform: translate3d(0px, 0px, 0px) rotateY(0deg) rotateX(0deg)  rotateZ(8deg); } to { transform: translate3d(5px, 35px, 0px) rotateY(-35deg) rotateX(0deg)  rotateZ(8deg);}}

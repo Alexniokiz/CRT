@@ -68,7 +68,7 @@ const Header = () => {
             </div>
             <div className="bar-mid" style={{height: "20px"}}></div>
             <div className="bar-title2">
-                <p className="text-title">CryptoPunk is the new reference of today</p>
+                <p className="text-title">9999 UNIQUE NFT</p>
             </div>
             <div className="bar-mid">
                 <p className="text-paragraph">The Crazy Camels is a collection of 2’000 Non Fungible Tokens (NFT). The Camels are stored as ERC- tokens on the Ethereum 
