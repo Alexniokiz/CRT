@@ -1,7 +1,7 @@
 .card-to-rotate {
     background: url('../assets/tugoune.png');
-    width: 391px;
-    height: 477px;
+    width: 420px;
+    height: 495px;
     animation: 2s cubic-bezier(0.79, 0.01, 0.34, 0.99) infinite alternate-reverse slidein;
     transform-style: preserve-3d;
     transform: rotateZ(8deg);
@@ -12,14 +12,14 @@
 
 .card-to-rotate2 {
     background: url('../assets/tugoune.png');
-    width: 391px;
-    height: 477px;
+    width: 420px;
+    height: 495px;
     animation: 2s cubic-bezier(0.79, 0.01, 0.34, 0.99) infinite alternate-reverse slidein2;
     transform-style: preserve-3d;
     transform: rotateZ(-8deg) skew(0deg, 0deg);
     position: absolute;
-    margin-left: 400px;
-
+    margin-left: 500px;
+    margin-top: 50px;
 }
 
 @-webkit-keyframes slidein { from { will-change: transform; transform: translate3d(0.0027px, 0.0021px, 0px) scale3d(1, 1, 1) rotateX(-0.0021deg) rotateY(0.0027deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;} to {  will-change: transform; transform: translate3d(0.0027px, 0.0021px, 0px) scale3d(1, 1, 1) rotateX(-0.0021deg) rotateY(0.0027deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; }  }
