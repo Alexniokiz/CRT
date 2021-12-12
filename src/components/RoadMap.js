@@ -38,7 +38,6 @@ const RoadMap = () => {
                         <div  ref={
                             el => {
                                 if (!el) return;
-                                console.log(el.getBoundingClientRect().y);
                                 if (el.getBoundingClientRect().y < 720 && el.getBoundingClientRect().y > -275) {
                                     setWidth(720 - el.getBoundingClientRect().y)
                                 } else if (el.getBoundingClientRect().y > 720) {

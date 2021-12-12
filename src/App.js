@@ -8,7 +8,8 @@ import Presentation from './components/Presentation';
 
 const App = () => {
   return (
-    <div className="App">
+    <div>
+      <div className="App"></div>
         <Header />
         <Presentation />
         <RoadMap />

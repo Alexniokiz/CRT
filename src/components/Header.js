@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Header.css"
 
 import Socials from './Socials';
@@ -12,6 +12,19 @@ import 'react-awesome-slider/dist/styles.css';
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const Header = () => {
+    const [time, setTime] = useState(Date.now());
+    useEffect(() => {
+        var testContainer = document.getElementsByClassName('awssld__content');
+        console.log(testContainer[0].getElementsByClassName('container-main'))
+        const interval = setInterval(() => setTime(Date.now()), 1000);
+        return () => {
+          clearInterval(interval);
+        };
+      }, []);
+    // var child = testContainer.getElementsByClassName('container-main');
+    useEffect(() => {
+        // console.log(testContainer.getElementsByClassName('container-main')[0])
+    })
     return (
         <>
             <div className="bar-title">
