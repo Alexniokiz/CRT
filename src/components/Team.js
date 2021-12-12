@@ -13,7 +13,7 @@ const Team = () => {
         <div data-aos="fade-up" data-aos-offset="200">
             <div className="bar-mid-top"></div>
             <div className="bar-title2">
-                    <p className="text-title inside" style={{color: 'white'}}>THE TEAM</p>
+                    <p className="text-title inside" style={{color: '#d4c5a8'}}>THE TEAM</p>
                 </div>
             <div className="bar-mid">
                 <div style={{display: "flex"}}>

@@ -21,7 +21,7 @@ const RoadMap = () => {
         <div>
             <div className="bar-mid-top"></div>
             <div className="bar-title2">
-                <p className="text-title inside" style={{color: 'white'}}>ROADMAP</p>
+                <p className="text-title inside" style={{color: '#d4c5a8'}}>ROADMAP</p>
             </div>
             <div className="bar-mid">
                 <div style={{display: 'flex', flexDirection: 'row', maxWidth: '1150px'}}>
@@ -52,12 +52,29 @@ const RoadMap = () => {
                     <div style={{paddingTop: '25px'}}>
                         <div data-aos="fade-left" className="carton">
                             <p className="title-description">JANUARY 2022</p>
-                            <p className="contenu-description">Lorem ipsum dolor sit amet, consectetur adip</p>
+                            <p className="contenu-description">• Access to the whitelist</p>
+                            <p className="contenu-description">• Join hte community on the discord</p>
                         </div>
-                        <div data-aos="fade-left"  className="carton"></div>
-                        <div data-aos="fade-left"  className="carton"></div>
-                        <div data-aos="fade-left"  className="carton"></div>
-                        <div data-aos="fade-left"  className="carton"></div>
+                        <div data-aos="fade-left"  className="carton">
+                            <p className="title-description">JANUARY 2022</p>
+                            <p className="contenu-description">• Access to the whitelist</p>
+                            <p className="contenu-description">• Join hte community on the discord</p>
+                        </div>
+                        <div data-aos="fade-left"  className="carton">
+                            <p className="title-description">JANUARY 2022</p>
+                            <p className="contenu-description">• Access to the whitelist</p>
+                            <p className="contenu-description">• Join hte community on the discord</p>
+                        </div>
+                        <div data-aos="fade-left"  className="carton">
+                            <p className="title-description">JANUARY 2022</p>
+                            <p className="contenu-description">• Access to the whitelist</p>
+                            <p className="contenu-description">• Join hte community on the discord</p>
+                        </div>
+                        <div data-aos="fade-left"  className="carton">
+                            <p className="title-description">JANUARY 2022</p>
+                            <p className="contenu-description">• Access to the whitelist</p>
+                            <p className="contenu-description">• Join hte community on the discord</p>
+                        </div>
                     </div>
                 </div>
             </div>

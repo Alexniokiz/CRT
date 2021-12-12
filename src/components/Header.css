@@ -57,14 +57,14 @@
     color: #fff;
     font-size: 19px;
     font-weight: 700;
-    font-family: "LouisGeorge";
+    font-family: "Din";
 }
 
 .profile-status {
     color: #504f4f;
     font-size: 19px;
     font-weight: 700;
-    font-family: "LouisGeorge";  
+    font-family: "Din";  
 }
 
 .bar-title2 {
@@ -89,7 +89,7 @@
 .text-paragraph {
     color: #fff;
     font-size: 19px;
-    font-family: "Poppins";
+    font-family: "Din";
     padding-left: 68px;
     padding-top: 10px;
     padding-right: 68px;
