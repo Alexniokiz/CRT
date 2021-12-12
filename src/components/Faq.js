@@ -44,7 +44,7 @@ const FaqSection = () => {
     }, [])
     const [rows, setRowsOption] = useState(null);
     return (
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-offset="200">
             <div className="bar-mid-top"></div>
             <div className="bar-title2">
                     <p className="text-title inside" style={{color: 'white'}}>FAQ</p>

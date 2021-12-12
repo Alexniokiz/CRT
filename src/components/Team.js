@@ -10,7 +10,7 @@ const Team = () => {
         AOS.init({ duration: 1000 });
     }, [])
     return (
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-offset="200">
             <div className="bar-mid-top"></div>
             <div className="bar-title2">
                     <p className="text-title inside" style={{color: 'white'}}>THE TEAM</p>

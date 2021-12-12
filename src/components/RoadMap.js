@@ -15,7 +15,7 @@ const RoadMap = () => {
         }
     })
     useEffect(() => {
-        AOS.init({ duration: 1000, delay: 300, once: true });
+        AOS.init({ duration: 1000, once: false, offset: 600 });
     }, [])
     return (
         <div>
@@ -27,11 +27,11 @@ const RoadMap = () => {
                 <div style={{display: 'flex', flexDirection: 'row', maxWidth: '1150px'}}>
                     <div className="decimal-text inside"></div>
                     <div>
-                        <p className="phase-count" style={{paddingTop: '130px'}}>PHASE 1</p>
-                        <p className="phase-count">PHASE 2</p>
-                        <p className="phase-count">PHASE 3</p>
-                        <p className="phase-count">PHASE 4</p>
-                        <p className="phase-count">PHASE 5</p>
+                        <p data-aos="fade-right" className="phase-count" style={{paddingTop: '130px'}}>PHASE 1</p>
+                        <p data-aos="fade-right" className="phase-count">PHASE 2</p>
+                        <p data-aos="fade-right" className="phase-count">PHASE 3</p>
+                        <p data-aos="fade-right" className="phase-count">PHASE 4</p>
+                        <p data-aos="fade-right" className="phase-count">PHASE 5</p>
                     </div>
                     <div>
                         <div className="progress-empty"></div>
