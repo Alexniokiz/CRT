@@ -32,9 +32,11 @@
     position: relative;
     margin: auto;
 }
+
 .inside {
     margin-left: 60px;
 }
+
 .bar-mid-top {
     background: url("../assets/up_middle.png");
     width: 1260px;
@@ -76,7 +78,7 @@
 .text-title {
     color: #d4c5a8;
     font-size: 28px;
-    font-family: "Eveleth";
+    font-family: "Brandon";
     padding-left: 68px;
     padding-top: 10px;
     height: auto;
@@ -162,6 +164,8 @@ p {
     margin: 0!important;
     line-height: 1;
 }
+
+
 
 .aws-btn {
     --slider-height-percentage: 60%;
