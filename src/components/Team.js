@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Header.css"
 
 import ProfilePic from "../assets/icon_team_1.png"
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const Team = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, [])
     return (
-        <div>
+        <div data-aos="fade-up">
             <div className="bar-mid-top"></div>
             <div className="bar-title2">
                     <p className="text-title inside" style={{color: 'white'}}>THE TEAM</p>
                 </div>
-            <div className="bar-mid" style={{height: '800px'}}>
+            <div className="bar-mid">
                 <div style={{display: "flex"}}>
                     <div className="decimal-text inside"></div>
                     <div style={{display: "flex", height: 'fit-content', flexWrap: 'wrap'}}>
@@ -29,6 +34,7 @@ const Team = () => {
 }
 
 const Profile = (props) => {
+
     return (
         <div style={{padding: '30px 40px'}}>
             <img src={ProfilePic}/>

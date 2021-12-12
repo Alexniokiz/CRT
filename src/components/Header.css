@@ -20,7 +20,7 @@
 .bar-mid {
     background: url("../assets/border_mid.png");
     width: 1260px;
-    height: 80px;
+    height: auto;
     position: relative;
     margin: auto;
 }

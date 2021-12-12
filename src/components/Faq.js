@@ -3,6 +3,9 @@ import "./Header.css"
 
 import Faq from "react-faq-component";
 
+import AOS from 'aos';
+import "aos/dist/aos.css";
+
 const data = {
     rows: [
         {
@@ -36,17 +39,20 @@ const styles = {
 };
 
 const FaqSection = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, [])
     const [rows, setRowsOption] = useState(null);
     return (
-        <div>
+        <div data-aos="fade-up">
             <div className="bar-mid-top"></div>
             <div className="bar-title2">
                     <p className="text-title inside" style={{color: 'white'}}>FAQ</p>
                 </div>
-            <div className="bar-mid" style={{height: '585px'}}>
+            <div className="bar-mid">
                 <div style={{display: "flex", maxWidth: '1150px'}}>
                     <div className="decimal-text inside"></div>
-                    <Faq data={data} styles={styles} getRowOptions={setRowsOption} />
+                    <Faq data={data} styles={styles} getRowOptions={setRowsOption}/>
                 </div>
             </div>
             <div className="bar-bottom"></div>
