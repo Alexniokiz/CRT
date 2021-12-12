@@ -10,6 +10,7 @@ const Presentation = () => {
             </div>
             <div className="bar-mid" style={{height: '1600px'}}>
                 <div className="card-to-rotate"></div>
+                <div className="card-to-rotate2"></div>
             </div>
             <div className="bar-bottom"></div>
         </>
