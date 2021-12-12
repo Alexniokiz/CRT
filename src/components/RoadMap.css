@@ -14,5 +14,5 @@
     margin-top: 26px;
     margin-left: 100px;
     position: relative;
-    transition: all 0.2s cubic-bezier(0.45, -0.24, 0.6, 1.37);
+    /* transition: all 0.2s cubic-bezier(0.45, -0.24, 0.6, 1.37); */
 }
