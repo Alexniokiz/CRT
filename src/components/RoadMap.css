@@ -1,0 +1,18 @@
+.progress-empty {
+    background: url('../assets/vide_bar.png');
+    width: 100px;
+    height: 531px;
+    margin-top: 26px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.progress-full {
+    background: url('../assets/full_bar.png');
+    width: 100px;
+    height: 531px;
+    margin-top: 26px;
+    margin-left: 100px;
+    position: relative;
+    transition: all 0.2s cubic-bezier(0.45, -0.24, 0.6, 1.37);
+}
