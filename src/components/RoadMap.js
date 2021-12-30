@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Header.css';
 import './RoadMap.css';
 
@@ -6,14 +6,8 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 
 const RoadMap = () => {
-    const [scroll, setScroll] = useState(0)
     const [width, setWidth] = useState(0)
-    const div = document.getElementsByClassName('progress-empty').getBoundingClientRect;
-    useEffect(() => {
-        window.onscroll = () => {
-            setScroll(window.pageYOffset)
-        }
-    })
+
     useEffect(() => {
         AOS.init({ duration: 1000, once: false, offset: 300 });
     }, [])

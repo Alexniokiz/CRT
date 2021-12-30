@@ -37,7 +37,7 @@ const Profile = (props) => {
 
     return (
         <div style={{padding: '30px 40px'}}>
-            <img src={ProfilePic}/>
+            <img src={ProfilePic} alt="team"/>
             <p className="profile-name">{props.name}</p>
             <p className="profile-status">{props.status}</p>
         </div>

@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import "./Header.css"
 
 import Socials from './Socials';
 
-import leftShadow from '../assets/left_big_img.png'
-import mainImage1 from '../assets/big_img1.png'
 import logo from '../assets/logo.png'
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
@@ -12,14 +10,9 @@ import 'react-awesome-slider/dist/styles.css';
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const Header = () => {
-    const [time, setTime] = useState(Date.now());
     useEffect(() => {
         var testContainer = document.getElementsByClassName('awssld__content');
         console.log(testContainer[0].getElementsByClassName('container-main'))
-        const interval = setInterval(() => setTime(Date.now()), 1000);
-        return () => {
-          clearInterval(interval);
-        };
       }, []);
     // var child = testContainer.getElementsByClassName('container-main');
     useEffect(() => {
@@ -30,7 +23,7 @@ const Header = () => {
             <div className="bar-title">
                 <div className="container-nav">
                     <div style={{display: "flex"}}>
-                        <img src={logo} className="title"></img>
+                        <img src={logo} alt="logo" className="title"></img>
                         <p style={{paddingLeft: "16px"}} className="title">TRILLIONAIRE THUGS</p>
                     </div>
                     <Socials />

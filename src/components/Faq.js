@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import "./Header.css"
 
 import Faq from "react-faq-component";
@@ -42,7 +42,6 @@ const FaqSection = () => {
     useEffect(() => {
         AOS.init({ duration: 1000 });
     }, [])
-    const [rows, setRowsOption] = useState(null);
     return (
         <div data-aos="fade-up" data-aos-offset="200">
             <div className="bar-mid-top"></div>
@@ -52,7 +51,7 @@ const FaqSection = () => {
             <div className="bar-mid">
                 <div style={{display: "flex", maxWidth: '1150px'}}>
                     <div className="decimal-text inside"></div>
-                    <Faq data={data} styles={styles} getRowOptions={setRowsOption}/>
+                    <Faq data={data} styles={styles}/>
                 </div>
             </div>
             <div className="bar-bottom"></div>

@@ -22,6 +22,7 @@
     font-size: 22px;
     padding-top: 180px;
     padding-left: 55px;
+    margin-bottom: 0rem;
 }
 
 .carton {
@@ -38,10 +39,12 @@
     padding-top: 20px;
     font-size: 38px;
     color: #3c0614;
+    margin-bottom: 0rem;
 }
 .contenu-description {
     padding-left: 155px;
     font-size: 18px;
     color: white;
     font-family: 'Din';
+    margin-bottom: 0rem;
 }
