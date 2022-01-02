@@ -68,6 +68,14 @@ const Header = () => {
                                 <span style={{fontSize: "63px", color: "white"}}>WHITELIST</span>
                             </div>
                         </div>
+                        <div className="container-main4">
+                            <div className="text-main">
+                                <span style={{fontSize: "171px"}}>GET</span>
+                                <span style={{fontSize: "85px", color: "white"}}>ACCESS</span>
+                                <span style={{fontSize: "95px", color: "white"}}>TO THE</span>
+                                <span style={{fontSize: "63px", color: "white"}}>WHITELIST</span>
+                            </div>
+                        </div>
                     </AutoplaySlider>
                 <div className="container-right">
                 </div>

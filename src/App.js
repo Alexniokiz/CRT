@@ -22,11 +22,12 @@ const App = () => {
         </>
         :
         <>
-            <div style={{backgroundColor: '#161616'}}>
-              <HeaderMobile />
-              <PresentationMobile />
-            </div>
-          </>
+          <div style={{backgroundColor: '#161616'}}>
+            <HeaderMobile />
+            <PresentationMobile />
+            <FaqSection />
+          </div>
+        </>
         }
 
     </>

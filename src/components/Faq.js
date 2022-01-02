@@ -43,19 +43,38 @@ const FaqSection = () => {
         AOS.init({ duration: 1000 });
     }, [])
     return (
-        <div data-aos="fade-up" data-aos-offset="200">
-            <div className="bar-mid-top"></div>
-            <div className="bar-title2">
-                    <p className="text-title inside" style={{color: '#d4c5a8'}}>FAQ</p>
+        <>
+        {
+        window.innerWidth > 900 ?
+            <div data-aos="fade-up" data-aos-offset="200">
+                <div className="bar-mid-top"></div>
+                <div className="bar-title2">
+                        <p className="text-title inside" style={{color: '#d4c5a8'}}>FAQ</p>
+                    </div>
+                <div className="bar-mid">
+                    <div style={{display: "flex", maxWidth: '1150px'}}>
+                        <div className="decimal-text inside"></div>
+                        <Faq data={data} styles={styles}/>
+                    </div>
                 </div>
-            <div className="bar-mid">
-                <div style={{display: "flex", maxWidth: '1150px'}}>
-                    <div className="decimal-text inside"></div>
-                    <Faq data={data} styles={styles}/>
-                </div>
+                <div className="bar-bottom"></div>
             </div>
-            <div className="bar-bottom"></div>
-        </div>
+            : 
+            <>
+            {/* <div className="bar-mid-top"></div> */}
+                {/* <div className="bar-title2"> */}
+                        <p className="text-title inside" style={{color: '#d4c5a8'}}>FAQ</p>
+                    {/* </div> */}
+                {/* <div className="bar-mid"> */}
+                    <div style={{display: "flex"}}>
+                        {/* <div className="decimal-text inside"></div> */}
+                        <Faq data={data} styles={styles}/>
+                    </div>
+                {/* </div> */}
+                {/* <div className="bar-bottom"></div> */}
+            </>
+        }
+        </>
     )
 }
 
