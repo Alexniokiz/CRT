@@ -68,26 +68,24 @@ const Header = () => {
                                 <span style={{fontSize: "63px", color: "white"}}>WHITELIST</span>
                             </div>
                         </div>
-                        <div className="container-main4">
+                        {/* <div className="container-main4">
                             <div className="text-main">
                                 <span style={{fontSize: "171px"}}>GET</span>
                                 <span style={{fontSize: "85px", color: "white"}}>ACCESS</span>
                                 <span style={{fontSize: "95px", color: "white"}}>TO THE</span>
                                 <span style={{fontSize: "63px", color: "white"}}>WHITELIST</span>
-                            </div>
-                        </div>
+                            </div> */}
+                        {/* </div> */}
                     </AutoplaySlider>
                 <div className="container-right">
                 </div>
             </div>
             <div className="bar-mid" style={{height: "20px"}}></div>
             <div className="bar-title2">
-                <p className="text-title">9999 UNIQUE NFT</p>
+                <p className="text-title">GET READY THUGS!</p>
             </div>
             <div className="bar-mid">
-                <p className="text-paragraph">The Crazy Camels is a collection of 2’000 Non Fungible Tokens (NFT). The Camels are stored as ERC- tokens on the Ethereum 
-Blockchain and hosted on IPFS. Each Crazy Camel is 100% unique and is programmatically generated from + hand-drawn
-traits. Each Crazy Camel comes with a membership to The Tribe - an exclusive group with wonderful perks.</p>
+                <p className="text-paragraph">Trillionaire Thugs is a collection of 7,777 NFTs, each representing a Thug as a digitized piece of 3D art. With more than 300 traits in 3D, our collection will be one of the most diverse and detailed on the market. Our goal is to build a community around the hype of the hip hop universe. The models to follow are no longer in suits, but in sneakers, their crypto wallets often being more loaded!</p>
             </div>
             <div className="bar-bottom"></div>
         </>

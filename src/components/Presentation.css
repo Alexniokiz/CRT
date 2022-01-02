@@ -67,8 +67,8 @@
 
     .toppixel {
         background: url('../assets/mobile_minipixeltopleft.png');
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         background-size: cover;
         margin-left: 20px;
         margin-top: 20px;
@@ -76,8 +76,8 @@
 
     .botpixel {
         background: url('../assets/mobile_minipixelbotright.png');
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         background-size: cover;
         margin-left: auto; 
         margin-right: 30px;
@@ -89,23 +89,14 @@
     }
     .text-title {
         color: #d4c5a8;
-        font-size: 23px;
+        font-size: 26px;
         font-family: "Brandon";
-        padding-top: 10px;
+        padding-top: 28px;
         padding-left: 0px;
         height: auto;
         margin: auto;
         width: -moz-fit-content;
         width: fit-content;
-    }
-
-    .bar-title2 {
-        background: url("../assets/fondtitle.png");
-        background-size: cover;
-        width: 85vw;
-        height: 59px;
-        position: relative;
-        margin: auto;
     }
 
     .bar-mid {

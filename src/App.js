@@ -8,6 +8,11 @@ import Presentation from './components/Presentation';
 
 import HeaderMobile from './components/HeaderMobile';
 import PresentationMobile from './components/PresentationMobile';
+
+import img1 from "./assets/paragraphe1.jpg";
+import img2 from "./assets/paragraphe2.jpg"
+import img3 from "./assets/paragraphe3.jpg"
+
 const App = () => {
   return (
     <>
@@ -15,7 +20,10 @@ const App = () => {
         <>
           <div className="App"></div>
           <Header />
-          <Presentation />
+          <Presentation int={0}/>
+          <Presentation int={1}/>
+          <Presentation int={2}/>
+          <Presentation int={3}/>
           <RoadMap />
           <Team />
           <FaqSection />
@@ -24,8 +32,13 @@ const App = () => {
         <>
           <div style={{backgroundColor: '#161616'}}>
             <HeaderMobile />
-            <PresentationMobile />
+            <PresentationMobile int={0}/>
+            <PresentationMobile int={1} pic={img1}/>
+            <PresentationMobile int={2} pic={img2}/>
+            <PresentationMobile int={3} pic={img3}/>
             <FaqSection />
+            <RoadMap />
+            <Team />
           </div>
         </>
         }

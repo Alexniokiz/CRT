@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.scss'
-import logo from "../assets/logo.png";
+import logo from '../assets/logo.png'
 
 import img1 from '../assets/mobile_slider1.jpg';
 import img2 from '../assets/mobile_slider2.jpg';
@@ -16,11 +16,11 @@ const Header = () => {
     return (
       <>
         <header>
-          <div className="container-fluid">
-            <nav className="navbar navbar-expand-xl justify-content-between ">
+          <div style={{height: "inherit"}} className="container-fluid">
+            <nav style={{height: "inherit"}}className="navbar navbar-expand-xl justify-content-between ">
               <a href="/#root" className="navbar-brand flex-grow-1" style={{display: 'flex'}}>
                 <img src={logo} className="nav-logo" alt=""/>
-                <p style={{paddingLeft: "16px"}} className="title-mobile">TRILLIONAIRE THUGS</p>
+                <p className="title-mobile">TRILLIONAIRE THUGS</p>
               </a>
               <div className="d-inline-flex"> 
                   <a className="nav-link" href="https://discord.gg/g6SjgnYrzr" target="_blank" rel="noreferrer" style={{paddingTop: "4px"}}>
@@ -107,10 +107,29 @@ const Header = () => {
             </nav>
           </div>
       </header>
-      <AutoplaySlider play={true} buttons={false} interval={3000} style={{paddingTop: "80px"}}>
-        <div data-src={img1} />
-        <div data-src={img2} />
-        <div data-src={img3} />
+      <AutoplaySlider play={false} buttons={false} interval={3000} style={{paddingTop: "80px"}}>
+        <div className="container-main-mobile">
+          <div className="text-main">
+              <span style={{fontSize: "103px", color: "black"}}>7777</span>
+              <span style={{fontSize: "55px", color: "white"}}>UNIQUE</span>
+              <span style={{fontSize: "82px", color: "white"}}>NFTs</span>
+          </div>
+        </div>
+        <div className="container-main-mobile2">
+          <div className="text-main">
+              <span style={{fontSize: "64px", color: "black"}}>RELEASE</span>
+              <span style={{fontSize: "76px", color: "white"}}>END OF</span>
+              <span style={{fontSize: "57px", color: "white"}}>JANUARY</span>
+          </div>
+        </div>
+        <div className="container-main-mobile3">
+          <div className="text-main">
+            <span style={{fontSize: "38px", color: "black"}}>GET ACCESS</span>
+            <span style={{fontSize: "65px", color: "white"}}>TO THE</span>
+            <span style={{fontSize: "43px", color: "white"}}>WHITELIST</span>
+            <span style={{fontSize: "36px", color: "white"}}>ON DISCORD</span>
+          </div>
+        </div>
       </AutoplaySlider>
   </>
   )

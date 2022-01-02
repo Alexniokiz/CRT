@@ -9,20 +9,44 @@ import "aos/dist/aos.css";
 const data = {
     rows: [
         {
-            title: <p style={{fontFamily: "Din"}}>What is an NFT ?</p>,
-            content: <p style={{fontFamily: "Din"}}>NFT stands for 'non-fungible token.' An NFT is basically data that is accounted for in a digital ledger, and that data represents something specific and unique. An NFT can, for example, represent a unique piece of art or a game token.</p>,
+            title: <h2 style={{fontFamily: "Din", fontSize: "26px"}}>What is Trillionaire Thugs?</h2>,
+            content: <p style={{fontFamily: "Din"}}>By creating Trillionaire Thugs, our goal is to bring the hip hop and urban scene to the NFTs market. Our characters are thugs that evolve in a hype Universe and that have been digitized by talented artists to bring them alive in the Metaverse.</p>,
         },
         {
-            title: <p style={{fontFamily: "Din"}}>When is the launch ?</p>,
-            content:<p style={{fontFamily: "Din"}}>The public mint will start on November 15, 9PM EST. Pre-sale will happen on November 14, 6PM EST.</p>,
+            title: <h2 style={{fontFamily: "Din", fontSize: "26px"}}>How much is a Trillionaire Thugs NFT?</h2>,
+            content:<p style={{fontFamily: "Din"}}>The cost of each piece on mint day will be 0.3 Eth + gas fee. The purchase will be limited to two pieces per wallet.</p>,
         },
         {
-            title: <p style={{fontFamily: "Din"}}>How Can I Get an NFT?</p>,
-            content: <p style={{fontFamily: "Din"}}>It will be available for purchase on our website through an initial sale. At the time of purchase, a randomly selected NFT will be minted on the blockchain and delivered to your wallet and OpenSea account. Once it is sold out, you can get a Crazy Camel on the secondary market (on OpenSea) only.</p>,
+            title: <h2 style={{fontFamily: "Din", fontSize: "26px"}}>When is the mint expected?</h2>,
+            content: <p style={{fontFamily: "Din"}}>The mint is expected to happen at the end of January. You are welcome to join our Discord group, in which we will communicate the exact mint date and other useful details related to Trillionaire Thugs. </p>,
         },
         {
-            title: <p style={{fontFamily: "Din"}}>How to Purchase One?</p>,
-            content: <p style={{fontFamily: "Din"}}>The easiest way is to install a MetaMask extension in your Chrome browser and link your Ethereum wallet to it. Ensure you have enough ETH in your wallet to cover the cost of a NFT plus the associated transaction (gas) fees. Approve the transaction on MetaMask and you are all set. The Crazy Camels will be available to mint on : thecrazycamels.com only.</p>,
+            title: <h2 style={{fontFamily: "Din", fontSize: "26px"}}>How can I mint?</h2>,
+            content: <p style={{fontFamily: "Din"}}>On mint day, a button CONNECT YOUR WALLET will be displayed on our official website only. Simply click on it and make sure you are on the Ethereum network to start minting.</p>,
+        },
+        {
+            title: <h2 style={{fontFamily: "Din", fontSize: "26px"}}>What is the supply for this collection?</h2>,
+            content: <p style={{fontFamily: "Din"}}>A total of 7,777 will be available on mint day.</p>,
+        },
+        {
+            title: <h2 style={{fontFamily: "Din", fontSize: "26px"}}>On which network is Trillionaire Thugs?</h2>,
+            content: <p style={{fontFamily: "Din"}}>Trillionaire Thugs will use the Ethereum network, and the collection will be hosted on Opensea.</p>,
+        },
+        {
+            title: <h2 style={{fontFamily: "Din", fontSize: "26px"}}>How do I get whitelisted</h2>,
+            content: <p style={{fontFamily: "Din"}}>There are many ways to get whitelisted, however there is a limited number of tickets! Please join our Discord to get more information.</p>,
+        },
+        {
+            title: <h2 style={{fontFamily: "Din", fontSize: "26px"}}>How can I be part of the club?</h2>,
+            content: <p style={{fontFamily: "Din"}}>To be part of the club, you need to hold at least one piece of the collection. The club will give you access to many exciting rewards and awesome events.</p>,
+        },
+        {
+            title: <h2 style={{fontFamily: "Din", fontSize: "26px"}}>How will Trillionaire Thugs be connected to the Metaverse?</h2>,
+            content: <p style={{fontFamily: "Din"}}>Our project is to get the NFTs connected to a future game in the Metaverse in which the holders will  get rewarded with ingame benefits. Stay tuned this year!</p>,
+        },
+        {
+            title: <h2 style={{fontFamily: "Din", fontSize: "26px"}}>Do I own the intellectual property rights of Trillionaire Thugs?</h2>,
+            content: <p style={{fontFamily: "Din"}}>By buying your NFT, on the first or second market, you will own all intellectual property rights on your NFT.</p>,
         },
     ],
 };
@@ -31,6 +55,7 @@ const styles = {
     bgColor: 'transparent',
     titleTextColor: "white",
     rowTitleColor: "white",
+    titleTextSize: "36px",
     // rowContentPaddingLeft: '40px',
     rowContentColor: 'white',
     arrowColor: "white",
@@ -62,11 +87,11 @@ const FaqSection = () => {
             : 
             <>
             {/* <div className="bar-mid-top"></div> */}
-                {/* <div className="bar-title2"> */}
-                        <p className="text-title inside" style={{color: '#d4c5a8'}}>FAQ</p>
-                    {/* </div> */}
+                <div className="bar-title2">
+                    <p className="text-title inside" style={{color: '#d4c5a8'}}>FAQ</p>
+                </div>
                 {/* <div className="bar-mid"> */}
-                    <div style={{display: "flex"}}>
+                    <div style={{display: "flex", padding: "0 30px"}}>
                         {/* <div className="decimal-text inside"></div> */}
                         <Faq data={data} styles={styles}/>
                     </div>
