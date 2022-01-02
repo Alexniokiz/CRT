@@ -107,7 +107,7 @@ const Header = () => {
             </nav>
           </div>
       </header>
-      <AutoplaySlider play={false} buttons={false} interval={3000} style={{paddingTop: "80px"}}>
+      <AutoplaySlider play={true} buttons={false} interval={3000} style={{paddingTop: "80px"}}>
         <div className="container-main-mobile">
           <div className="text-main">
               <span style={{fontSize: "103px", color: "black"}}>7777</span>
