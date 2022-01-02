@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import './Header.css';
+import './Header.scss';
 import './RoadMap.css';
 
 import AOS from 'aos';

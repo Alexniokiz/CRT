@@ -10,7 +10,7 @@ import HeaderMobile from './components/HeaderMobile';
 import PresentationMobile from './components/PresentationMobile';
 const App = () => {
   return (
-    <div>
+    <>
       {window.innerWidth > 900 ?
         <>
           <div className="App"></div>
@@ -21,13 +21,15 @@ const App = () => {
           <FaqSection />
         </>
         :
-        <div style={{backgroundColor: '#161616'}}>
-          <HeaderMobile />
-          <PresentationMobile />
-        </div>
+        <>
+            <div style={{backgroundColor: '#161616'}}>
+              <HeaderMobile />
+              <PresentationMobile />
+            </div>
+          </>
         }
 
-    </div>
+    </>
   );
 }
 

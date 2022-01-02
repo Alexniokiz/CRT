@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import "./Header.css"
+import "./Header.scss"
 
 import ProfilePic from "../assets/icon_team_1.png"
 import AOS from 'aos';

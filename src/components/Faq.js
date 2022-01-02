@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import "./Header.css"
+import "./Header.scss"
 
 import Faq from "react-faq-component";
 

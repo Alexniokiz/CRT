@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Header.css'
+import './Header.scss'
 import './Presentation.css'
 
 import "aos/dist/aos.css";
