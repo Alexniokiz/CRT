@@ -87,7 +87,7 @@ const Team = () => {
 const Profile = (props) => {
 
     return (
-        <div>
+        <div style={{margin: "auto"}}>
             <img src={ProfilePic} alt="team" width={window.innerWidth < 900 ? "160px" : "100%"}/>
             <p className="profile-name">{props.name}</p>
             <p className="profile-status">{props.status}</p>

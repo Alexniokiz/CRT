@@ -20,35 +20,110 @@
 .phase-count {
     color: #fff;
     font-size: 22px;
-    padding-top: 180px;
-    padding-left: 55px;
+    padding-top: 30px;
     margin-bottom: 0rem;
 }
 
+.roadmap--line {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 81%;
+  margin-top: 95px;
+  border-radius: 5px;
+  background: linear-gradient(#e6ca0f, #e41a51);
+}
+.roadmap--line-empty {
+  top: 0;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 86%;
+  margin-top: 95px;
+  border-radius: 5px;
+  background: black;
+}
+.roadmap--container{
+  position: relative;
+}
 .carton {
-    background: url('../assets/carton.png');
-    width: 774px;
-    height: 163px;
+    width: 771px;
+    height: 158px;
     margin-top: 46px;
     margin-left: 20px;
     position: relative;
 }
 
+.c1 {
+  background: url("../assets/phase_1.png");
+  margin-top: 25px;
+}
+
+.c2 {
+  background: url("../assets/phase_2.png");
+}
+
+.c3 {
+  background: url("../assets/phase_3.png");
+}
+
+.c4 {
+  background: url("../assets/phase_4.png");
+}
+
+.c5 {
+  background: url("../assets/phase_5.png");
+}
+
+.c6 {
+  background: url("../assets/phase_6.png");
+}
+
 .title-description {
-    padding-left: 155px;
-    padding-top: 20px;
+    padding-left: 45px;
+    padding-top: 40px;
     font-size: 38px;
     color: #3c0614;
     margin-bottom: 0rem;
 }
 .contenu-description {
-    padding-left: 155px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-right: 25px;
     font-size: 18px;
     color: white;
     font-family: 'Din';
     margin-bottom: 0rem;
 }
+.roadmap--point {
+  position: absolute;
+  left: 0%;
+  transform: translateX(-50%);
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  border-radius: 100%;
+  flex-shrink: 0;
+  margin-top: 95px;
+  box-shadow: 0px 0px 9px 9px rgba(0, 0, 0, 0.548);
+}
+.pad-point {
+  margin-top: 115px;
+}
 
+.roadmap--point:after {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  border: 3px solid rgb(255, 255, 255);
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: rgba(255, 255, 255, 0);
+  z-index: -1;
+}
 @media screen and (max-width: 992px) {
     .new-line {
         white-space: pre-line;
@@ -79,6 +154,7 @@
         width: 10px;
         height: 100%;
         border-radius: 5px;
+        margin-top: 0px;
         background: linear-gradient(#4590d6, #64339d);
     }
     

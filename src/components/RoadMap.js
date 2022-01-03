@@ -6,11 +6,30 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 
 const RoadMap = () => {
-    const [width, setWidth] = useState(0)
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const handleScroll = () => {
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        let position = window.pageYOffset;
+        if (position < 4000) return setScrollPosition(0);
+        if (position > 5200) return setScrollPosition(86);
+
+        let progressHeight = ((position - 4000) / 1400) * 100;
+
+        setScrollPosition(progressHeight);
+    };
+    
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+    
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         AOS.init({ duration: 1000, once: true, offset: 300 });
     }, [])
+    console.log(scrollPosition);
     return (
         <div>
             {window.innerWidth < 992 ?
@@ -75,53 +94,99 @@ const RoadMap = () => {
                 <div className="bar-mid">
                     <div style={{display: 'flex', flexDirection: 'row', maxWidth: '1150px'}}>
                         <div className="decimal-text inside"></div>
-                        <div>
-                            <p data-aos="fade-right" className="phase-count" style={{paddingTop: '130px'}}>PHASE 1</p>
-                            <p data-aos="fade-right" className="phase-count">PHASE 2</p>
-                            <p data-aos="fade-right" className="phase-count">PHASE 3</p>
-                            <p data-aos="fade-right" className="phase-count">PHASE 4</p>
-                            <p data-aos="fade-right" className="phase-count">PHASE 5</p>
+                        <div style={{width: '15vw'}}>
+                            <p data-aos="fade-right" className="phase-count" style={{paddingTop: '65px', textAlign: "center"}}>PHASE 1</p>
+                            <p style={{
+                                width: "60%",
+                                textAlign: "center",
+                                margin: "auto",
+                                color: "rgb(98, 97, 97)"
+                            }}>LAUNCH OF THE COLLECTION</p>
+                            <p data-aos="fade-right" className="phase-count" style={{paddingTop: '135px', textAlign: "center"}}>PHASE 2</p>
+                            <p style={{
+                                width: "65%",
+                                textAlign: "center",
+                                margin: "auto",
+                                textTransform: "uppercase",
+                                color: "rgb(98, 97, 97)"
+                            }}>Access to the Gang</p>
+                            <p data-aos="fade-right" className="phase-count" style={{paddingTop: '115px', textAlign: "center"}}>PHASE 3</p>
+                            <p style={{
+                                width: "65%",
+                                textAlign: "center",
+                                margin: "auto",
+                                textTransform: "uppercase",
+                                color: "rgb(98, 97, 97)"
+                            }}>Merchandising release</p>
+                            <p data-aos="fade-right" className="phase-count" style={{paddingTop: '125px', textAlign: "center"}}>PHASE 4</p>
+                            <p style={{
+                                width: "65%",
+                                textAlign: "center",
+                                margin: "auto",
+                                textTransform: "uppercase",
+                                color: "rgb(98, 97, 97)"
+                            }}>New collection Drop</p>
+                            <p data-aos="fade-right" className="phase-count" style={{paddingTop: '125px', textAlign: "center"}}>PHASE 5</p>
+                            <p style={{
+                                width: "65%",
+                                textAlign: "center",
+                                margin: "auto",
+                                textTransform: "uppercase",
+                                color: "rgb(98, 97, 97)"
+                            }}>Fusion of the NFT</p>
+                            <p data-aos="fade-right" className="phase-count" style={{paddingTop: '125px', textAlign: "center"}}>PHASE 6</p>
+                            <p style={{
+                                width: "60%",
+                                textAlign: "center",
+                                margin: "auto",
+                                textTransform: "uppercase",
+                                color: "rgb(98, 97, 97)"
+                            }}>Taking over the Metaverse</p>
                         </div>
-                        <div>
-                            <div className="progress-empty"></div>
-                            <div  ref={
-                                el => {
-                                    if (!el) return;
-                                    if (el.getBoundingClientRect().y < 720 && el.getBoundingClientRect().y > -275) {
-                                        setWidth(720 - el.getBoundingClientRect().y)
-                                    } else if (el.getBoundingClientRect().y > 720) {
-                                        setWidth(0)
-                                    } else if (el.getBoundingClientRect().y < -345) {
-                                        setWidth(1005)
-                                    }
-                                }
-                            } className="progress-full" style={{height: width+'px'}}></div>
-                        </div>
-                        <div style={{paddingTop: '25px'}}>
-                            <div data-aos="fade-left" className="carton">
-                                <p className="title-description">JANUARY 2022</p>
-                                <p className="contenu-description">• Access to the whitelist</p>
-                                <p className="contenu-description">• Join hte community on the discord</p>
-                            </div>
-                            <div data-aos="fade-left"  className="carton">
-                                <p className="title-description">JANUARY 2022</p>
-                                <p className="contenu-description">• Access to the whitelist</p>
-                                <p className="contenu-description">• Join hte community on the discord</p>
-                            </div>
-                            <div data-aos="fade-left"  className="carton">
-                                <p className="title-description">JANUARY 2022</p>
-                                <p className="contenu-description">• Access to the whitelist</p>
-                                <p className="contenu-description">• Join hte community on the discord</p>
-                            </div>
-                            <div data-aos="fade-left"  className="carton">
-                                <p className="title-description">JANUARY 2022</p>
-                                <p className="contenu-description">• Access to the whitelist</p>
-                                <p className="contenu-description">• Join hte community on the discord</p>
-                            </div>
-                            <div data-aos="fade-left"  className="carton">
-                                <p className="title-description">JANUARY 2022</p>
-                                <p className="contenu-description">• Access to the whitelist</p>
-                                <p className="contenu-description">• Join hte community on the discord</p>
+                        <div className="roadmap--container" style={{display: 'inline-flex'}}>
+                            <div class="roadmap--line-empty" ></div>
+                            <div class="roadmap--line" style={{height: scrollPosition + "%"}}></div>
+                            <div>
+                                <span class="roadmap--point">
+                                    <span class="roadmap--point-inside"></span>
+                                </span>
+                                <div data-aos="fade-left" className="carton c1">
+                                <p className="contenu-description">
+                                    <li>Launch of our Discord & website</li>
+                                    <li>Grant access to the limited whitelist</li>
+                                    <li>Launch of the 7,777 NFTs collection at the end of January</li>
+                                    </p>
+                                </div>
+                                <span class="roadmap--point pad-point">
+                                    <span class="roadmap--point-inside"></span>
+                                </span>
+                                <div data-aos="fade-left"  className="carton c2">
+                                    <p className="contenu-description">Each holder will now be part of a close community of successful people in the blockchain world. On top of that, to celebrate the launch of the collection, we will throw two big parties in Dubai and Miami to give a chance to all the members of this new community to meet in real life. Throughout the project, different events will take place for the holders, and rewards will be earned.</p>
+                                </div>
+                                <span class="roadmap--point pad-point">
+                                    <span class="roadmap--point-inside"></span>
+                                </span>
+                                <div data-aos="fade-left"  className="carton c3">
+                                    <p className="contenu-description">Holders will have access to high quality merch (caps/t shirts/sweatshirts…) related to the brand Trillionaire Thugs. It will then be easy to recognize each other, between members of our private community!</p>
+                                </div>
+                                <span class="roadmap--point pad-point">
+                                    <span class="roadmap--point-inside"></span>
+                                </span>
+                                <div data-aos="fade-left"  className="carton c4">
+                                    <p className="contenu-description">Long-term holders (30 days or more) will have access to a free drop of a new NFTs collection of weapons that can be merged with the first collection. Newcomers to the project will also have the opportunity to acquire items from this new drop on through a new mint or OpenSea.</p>
+                                </div>
+                                <span class="roadmap--point pad-point">
+                                    <span class="roadmap--point-inside"></span>
+                                </span>
+                                <div data-aos="fade-left"  className="carton c5">
+                                    <p className="contenu-description">You will be able to upgrade your character with different items and weapons by merging them into a new NFT collection. This process will increase the value of your current NFT and add some functionality for the next stage of the project.</p>
+                                </div>
+                                <span class="roadmap--point pad-point">
+                                    <span class="roadmap--point-inside"></span>
+                                </span>
+                                <div data-aos="fade-left"  className="carton c6">
+                                    <p className="contenu-description">Our goal is to connect the NFTs characters to the Metaverse & to a Play 2 earn game. When this will be available, our holders will be able to transfer the features of their NFTs to this online world and embody their character, with all its specifications.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
