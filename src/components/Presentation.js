@@ -17,12 +17,12 @@ const paragraph = [
     },
     {
         title: <p className='text-paragraph2' style={{color: '#626161', fontFamily: 'Brandon', fontSize: '22px', margin: '0'}}>RARE & UNIQUES</p>,
-        content: <p className="text-paragraph2" style={{maxWidth: '500px', paddingTop: '20px', fontFamily: 'Din'}}>Have you ever seen a gang without a boss? In any gang, you get respect and the benefits that go with it, by climbing the ladder. On mint day, you have a direct chance to become a Gold member without having to start from the bottom. On mint day, you will have 5% chance to mint a Golden Thug, as 390 pieces are randomly Golden! Their owners will receive additional benefits when the NFTs are connected to the Metaverse. Just by holding you will get a reward from the crew! In addition to that, 10 Legendary NFTs that will make reference to the crypto world will complete the collection.</p>,
+        content: <p className="text-paragraph2" style={{paddingTop: '20px', fontFamily: 'Din'}}>Have you ever seen a gang without a boss? In any gang, you get respect and the benefits that go with it, by climbing the ladder. On mint day, you have a direct chance to become a Gold member without having to start from the bottom. On mint day, you will have 5% chance to mint a Golden Thug, as 390 pieces are randomly Golden! Their owners will receive additional benefits when the NFTs are connected to the Metaverse. Just by holding you will get a reward from the crew! In addition to that, 10 Legendary NFTs that will make reference to the crypto world will complete the collection.</p>,
     },
     {
         title: <p className='text-paragraph2' style={{color: '#626161', fontFamily: 'Brandon', fontSize: '22px', margin: '0'}}>GAME & METAVERSE</p>,
-        content: <p className="text-paragraph2" style={{maxWidth: '500px', paddingTop: '20px', fontFamily: 'Din'}}>Our goal is to connect the NFTs characters to the Metaverse by adding value to your NFT, both financially and practically. As a digital identity, your NFT will simply and effectively represent you in the Metaverse, that will soon become our daily reality. When this will be available, our holders will be able to transfer the features of their NFTs to this online world and embody their character, with all its specifications. A free new drop collection will allow long term holders to access a collection of weapons that can be merged with the first collection, as an upgrade. This process will increase the value of your current NFT and add some functionality for the next stage of the project.</p>,
-    }
+        content: <p className="text-paragraph2" style={{paddingTop: '20px', fontFamily: 'Din'}}>Our goal is to connect the NFTs characters to the Metaverse by adding value to your NFT, both financially and practically. As a digital identity, your NFT will simply and effectively represent you in the Metaverse, that will soon become our daily reality. When this will be available, our holders will be able to transfer the features of their NFTs to this online world and embody their character, with all its specifications. A free new drop collection will allow long term holders to access a collection of weapons that can be merged with the first collection, as an upgrade. This process will increase the value of your current NFT and add some functionality for the next stage of the project.</p>,
+    },
 ]
 const Presentation = (props) => {
     // useEffect(() => {
@@ -85,7 +85,24 @@ const Presentation = (props) => {
                     </div>
                 </>
                 :
-                <></>
+                <>
+                    <div className="bar-mid-top"></div>
+                    <div className="bar-title2">
+                        <p className="text-title inside" style={{color: '#d4c5a8'}}>THE PROJECT</p>
+                    </div>
+                    <div className="bar-mid" style={{height: '620px'}}>
+                        <div style={{display: 'flex', flexDirection: 'row', maxWidth: '1150px', margin: 'auto'}}>
+                            <div className="decimal-text "></div>
+                            <div style={{display: 'flex', flexDirection: 'column'}}>
+                                {paragraph[props.int].title}
+                                {paragraph[props.int].content}
+                                {paragraph[props.int+1].title}
+                                {paragraph[props.int+1].content}
+                            </div>
+                            {/* <img src={Samourai}/> */}
+                        </div>
+                    </div>
+                </>
             }
             <div className="bar-bottom"></div>
         </div>
