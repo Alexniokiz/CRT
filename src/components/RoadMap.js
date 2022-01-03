@@ -11,13 +11,13 @@ const RoadMap = () => {
         let totalHeight = document.body.scrollHeight - window.innerHeight;
         let position = window.pageYOffset;
         if (window.innerHeight  < 1100) {
-            if (position < 4000) return setScrollPosition(0);
-            if (position > 5200) return setScrollPosition(86);
-            let progressHeight = ((position - 4000) / 1400) * 100;
+            if (position < 3800) return setScrollPosition(0);
+            if (position > 5000) return setScrollPosition(86);
+            let progressHeight = ((position - 3800) / 1400) * 100;
             setScrollPosition(progressHeight);
         } else {
             if (position < 3400) return setScrollPosition(0);
-            if (position > 4400) return setScrollPosition(86);
+            if (position > 4600) return setScrollPosition(86);
             let progressHeight = ((position - 3400) / 1400) * 100;
             setScrollPosition(progressHeight);
         }
