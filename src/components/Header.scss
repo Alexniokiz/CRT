@@ -116,7 +116,7 @@ p {
     margin-inline-start: unset;
 }
 .container-main {
-    background: url("../assets/big_img1.png");
+    background: url("../assets/big_img1.webp");
     margin: auto;
     width: 1202px;
     height: 780px;
@@ -124,7 +124,7 @@ p {
 }
 
 .container-main2 {
-    background: url("../assets/big_img2.png");
+    background: url("../assets/big_img2.webp");
     margin: auto;
     width: 1202px;
     height: 780px;
@@ -139,7 +139,7 @@ p {
 //     position: relative;
 // }
 .container-main3 {
-  background: url("../assets/big_img4.png");
+  background: url("../assets/big_img4.webp");
   margin: auto;
   width: 1202px;
   height: 780px;
@@ -810,7 +810,7 @@ p {
       height:0;
       overflow:hidden;
       z-index:-1; // hide images
-      content: url("../assets/mobile_slider1.jpg") url("../assets/mobile_slider2.jpg") url("../assets/mobile_slider3.jpg");   // load images
+      content: url("../assets/mobile_slider1.webp") url("../assets/mobile_slider2.webp") url("../assets/mobile_slider3.webp");   // load images
     }
     footer {
       // padding-block-start: 65px;
@@ -872,7 +872,7 @@ p {
   }
 
     .container-main-mobile {
-      background: url("../assets/mobile_slider1.jpg");
+      background: url("../assets/mobile_slider1.webp");
       background-size: cover;
       width: 100%;
       height: 100%;
@@ -881,7 +881,7 @@ p {
       left: 0;
   }
   .container-main-mobile2 {
-    background: url("../assets/mobile_slider2.jpg");
+    background: url("../assets/mobile_slider2.webp");
     background-size: cover;
     width: 100%;
     height: 100%;
