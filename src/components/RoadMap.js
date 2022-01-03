@@ -16,9 +16,9 @@ const RoadMap = () => {
             let progressHeight = ((position - 4000) / 1400) * 100;
             setScrollPosition(progressHeight);
         } else {
-            if (position < 3600) return setScrollPosition(0);
-            if (position > 4800) return setScrollPosition(86);
-            let progressHeight = ((position - 3600) / 1400) * 100;
+            if (position < 3400) return setScrollPosition(0);
+            if (position > 4400) return setScrollPosition(86);
+            let progressHeight = ((position - 3400) / 1400) * 100;
             setScrollPosition(progressHeight);
         }
 
