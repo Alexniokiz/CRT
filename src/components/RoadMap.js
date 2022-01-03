@@ -37,7 +37,7 @@ const RoadMap = () => {
     }, [])
     console.log(scrollPosition);
     return (
-        <div>
+        <section id="roadmap">
             {window.innerWidth < 992 ?
                 <>
                     <div className="bar-title2" style={{marginTop: "15px"}}>
@@ -200,7 +200,7 @@ const RoadMap = () => {
                 <div className="bar-bottom"></div>
             </>
         }
-        </div>
+        </section>
     )
 }
 

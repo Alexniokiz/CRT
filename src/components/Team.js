@@ -10,7 +10,7 @@ const Team = () => {
         AOS.init({ duration: 1000 });
     }, [])
     return (
-        <>
+        <section id="team">
         {window.innerWidth > 900 ? 
             <div data-aos="fade-up" data-aos-offset="200">
                 <div className="bar-mid-top"></div>
@@ -80,7 +80,7 @@ const Team = () => {
                     </div>
                 </div>
             </>}
-        </>
+        </section>
     )
 }
 

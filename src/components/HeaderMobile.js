@@ -45,31 +45,45 @@ const Header = () => {
                 <div className="navbar-collapse header--content" id="navbarSupportedContent">
                   <ul className="navbar-nav mb-2 mb-lg-0 align-items-center flex-grow-1 flex-shrink-0">
                     <li className="nav-item">
-                      <a className="nav-link" href="#features" onClick={() => {
+                      <a className="nav-link" href="#project" onClick={() => {
                           document.querySelector('.burger_bar_container').classList.toggle('active')
                         }}>
-                        <span>BeHype</span>
+                        <span>THE PROJECT</span>
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#club" onClick={() => {
+                      <a className="nav-link" href="#gang" onClick={() => {
                           document.querySelector('.burger_bar_container').classList.toggle('active')
                         }}>
-                        <span>Club</span>
+                        <span>BE PART OF THE GANG!</span>
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#uniques" onClick={() => {
+                          document.querySelector('.burger_bar_container').classList.toggle('active')
+                        }}>
+                        <span>RARE & UNIQUES</span>
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#metaverse" onClick={() => {
+                          document.querySelector('.burger_bar_container').classList.toggle('active')
+                        }}>
+                        <span>GAME & METAVERSE</span>
                       </a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link" href="#roadmap" onClick={() => {
                           document.querySelector('.burger_bar_container').classList.toggle('active')
                         }}>
-                        <span>Roadmap</span>
+                        <span>ROADMAP</span>
                       </a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link" href="#team" onClick={() => {
                           document.querySelector('.burger_bar_container').classList.toggle('active')
                         }}>
-                        <span>Team</span>
+                        <span>THE TEAM</span>
                       </a>
                     </li>
                     <li className="nav-item">

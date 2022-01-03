@@ -29,33 +29,35 @@ const PresentationMobile = (props) => {
         AOS.init({ duration: 1000, once: false });
     }, [])
     return (
-        <div style={{paddingTop: '10px'}}>
-            <div class="bar-title2">
-                <p class="text-title inside" style={{color: "rgb(212, 197, 168)"}}>{paragraph[props.int].title}</p>
-            </div>
-            <div class="bar-mid">
-                <div class="toppixel"></div>
-                <div style={{display: "flex", flexDirection: "row"}}>
-                    <div style={{display: "flex", flexDirection: "column"}}>
-                        <div style={{display: "flex", flexDirection: "row"}}>
-                            <p class="text-paragraph2" style={{paddingTop: "20px", fontFamily: "Din", textAlign: "justify"}}>{paragraph[props.int].content}</p>
+        <section id={props.section}>
+            <div style={{paddingTop: '10px'}}>
+                <div class="bar-title2">
+                    <p class="text-title inside" style={{color: "rgb(212, 197, 168)"}}>{paragraph[props.int].title}</p>
+                </div>
+                <div class="bar-mid">
+                    <div class="toppixel"></div>
+                    <div style={{display: "flex", flexDirection: "row"}}>
+                        <div style={{display: "flex", flexDirection: "column"}}>
+                            <div style={{display: "flex", flexDirection: "row"}}>
+                                <p class="text-paragraph2" style={{paddingTop: "20px", fontFamily: "Din", textAlign: "justify"}}>{paragraph[props.int].content}</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="botpixel"></div>
+                    <div style={{width: "100%", height: "100%", left: "50%"}}></div>
                 </div>
-                <div class="botpixel"></div>
-                <div style={{width: "100%", height: "100%", left: "50%"}}></div>
+                {props.int == 0 ? 
+                    <div style={{width: '100%', height: '420px', left: '50%'}}>
+                        <div className="card-to-rotate"></div>
+                        <div className="card-to-rotate2"></div>
+                    </div>
+                    :
+                    <div style={{textAlign: 'center', marginTop: '20px', marginBottom: '10px'}} data-aos="fade-right">
+                        <img src={props.pic} width="350px" height="auto" style={{margin: "auto"}}/>
+                    </div>
+                }
             </div>
-            {props.int == 0 ? 
-                <div style={{width: '100%', height: '420px', left: '50%'}}>
-                    <div className="card-to-rotate"></div>
-                    <div className="card-to-rotate2"></div>
-                </div>
-                :
-                <div style={{textAlign: 'center', marginTop: '20px', marginBottom: '10px'}} data-aos="fade-right">
-                    <img src={props.pic} width="350px" height="auto" style={{margin: "auto"}}/>
-                </div>
-            }
-        </div>
+        </section>
     )
 }
 

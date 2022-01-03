@@ -68,7 +68,7 @@ const FaqSection = () => {
         AOS.init({ duration: 1000 });
     }, [])
     return (
-        <>
+        <section id="faq">
         {
         window.innerWidth > 900 ?
             <div data-aos="fade-up" data-aos-offset="200">
@@ -99,7 +99,7 @@ const FaqSection = () => {
                 {/* <div className="bar-bottom"></div> */}
             </>
         }
-        </>
+        </section>
     )
 }
 

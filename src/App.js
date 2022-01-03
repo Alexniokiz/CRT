@@ -33,10 +33,10 @@ const App = () => {
         <>
           <div style={{backgroundColor: '#161616'}}>
             <HeaderMobile />
-            <PresentationMobile int={0}/>
-            <PresentationMobile int={1} pic={img1}/>
-            <PresentationMobile int={2} pic={img2}/>
-            <PresentationMobile int={3} pic={img3}/>
+            <PresentationMobile int={0} section="project"/>
+            <PresentationMobile int={1} pic={img1} section="gang"/>
+            <PresentationMobile int={2} pic={img2} section="uniques"/>
+            <PresentationMobile int={3} pic={img3} section="metaverse"/>
             <RoadMap />
             <Team />
             <FaqSection />
