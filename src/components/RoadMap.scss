@@ -208,7 +208,9 @@
     .roadmap--item {
     margin-inline-start: 40px;
     }
-
+    .h5, .title {
+      font-size: 18px;
+    }
     .roadmap--wrapper > .roadmap--item:nth-child(even),
     .roadmap--wrapper > .roadmap--item{
     flex-direction: column;
@@ -223,7 +225,7 @@
       width: 100%;
       margin-block-start: -17px;
       padding-left: 17px;
-      font-size: 44px;
+      font-size: 38px;
     }
       
     .roadmap--point{
@@ -236,7 +238,7 @@
     }
     
     .roadmap--container{
-        margin-block-start: 70px;
+        margin-block-start: 30px;
         padding-block-start: 0;
     }
 }

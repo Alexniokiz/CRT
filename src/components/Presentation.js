@@ -39,7 +39,18 @@ const Presentation = (props) => {
                     <div style={{display: 'flex', flexDirection: 'column'}}>
                         {paragraph[props.int].title}
                         <div style={{display: 'flex'}}>
-                            {paragraph[props.int].content}
+                            <div>
+                                {paragraph[props.int].content}
+                                { props.int == 0 ? 
+                                    <>
+                                        <a style={{width: "100%"}} className="nav-link nav-link_icon nav-link_icon-fluid rounded-3" href="https://discord.gg/HUsz85w9" target="_blank" rel="noreferrer">
+                                            <span className="" style={{fontFamily: "Brandon", textTransform: "initial", fontSize: "22px", color: "black"}}>Join our discord</span>
+                                        </a>
+                                    </>
+                                : 
+                                    <></>
+                                }
+                            </div>
                             <div className="card-to-rotate"></div>
                             <div className="card-to-rotate2"></div>
                         </div>

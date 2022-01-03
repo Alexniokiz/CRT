@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import './Header.scss'
 import './Presentation.css'
 
+import AOS from 'aos';
+import "aos/dist/aos.css";
 const paragraph = [
     {
         title: "TRILLIONAIRE THUGS",
@@ -23,11 +25,11 @@ const paragraph = [
 ]
 
 const PresentationMobile = (props) => {
-    // useEffect(() => {
-    //     AOS.init({ duration: 1000, once: false });
-    // }, [])
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: false });
+    }, [])
     return (
-        <div style={{paddingTop: '30px'}}>
+        <div style={{paddingTop: '10px'}}>
             <div class="bar-title2">
                 <p class="text-title inside" style={{color: "rgb(212, 197, 168)"}}>{paragraph[props.int].title}</p>
             </div>
@@ -44,12 +46,12 @@ const PresentationMobile = (props) => {
                 <div style={{width: "100%", height: "100%", left: "50%"}}></div>
             </div>
             {props.int == 0 ? 
-                <div style={{width: '100%', height: '370px', left: '50%'}}>
+                <div style={{width: '100%', height: '420px', left: '50%'}}>
                     <div className="card-to-rotate"></div>
                     <div className="card-to-rotate2"></div>
                 </div>
                 :
-                <div style={{textAlign: 'center', marginTop: '10px', marginBottom: '10px'}}>
+                <div style={{textAlign: 'center', marginTop: '20px', marginBottom: '10px'}} data-aos="fade-right">
                     <img src={props.pic} width="350px" height="auto" style={{margin: "auto"}}/>
                 </div>
             }

@@ -455,17 +455,12 @@ p {
     position: relative;
     color: #fff!important;
     transition: background-color 0.5s ease;
-    font-family: 'Basier';
     font-weight: 700;
     font-size: 1.02rem;
     background-color: transparent;
     background-position: left;
     text-transform: uppercase;
     transition: color 0.5s ease;
-  }
-  
-  .nav-link span {
-    font-family: 'BasierBold';
   }
   
   .nav-link:not(.nav-link_icon) {
@@ -550,8 +545,7 @@ p {
   }
   
   .nav-link_icon-fluid span {
-    font-size: 18px;
-    font-family: 'BasierBold';
+    font-size: 22px;
     font-weight: 700;
   }
   
@@ -809,11 +803,30 @@ p {
   }
   
   @media screen and (max-width: 992px) {
+    footer {
+      // padding-block-start: 65px;
+      // padding-block-end: 65px;
+      min-height: 200px;
+      background: linear-gradient(0deg, #3b3d41, transparent);
+    }
+    .nav-link_icon {
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      color: #000!important;
+      transition: all .4s ease;
+      border-radius: 100%;
+      text-align: center;
+      font-size: 16px;
+      line-height: 38px;
+      padding: 0 !important;
+      flex-shrink: 0;
+    } 
     .bar-title2 {
       background: url("../assets/fondtitle_mobile.png");
       background-repeat: no-repeat;
       width: 100%;
-      height: 90px;
+      height: 80px;
       position: relative;
       margin: auto;
       background-size: contain;
@@ -933,7 +946,6 @@ p {
   
     .footer--social-container{
       justify-content: space-between;
-      margin-block-end: 3rem;
     }
   }
   
@@ -997,7 +1009,6 @@ p {
       align-items: center;
       text-align: center;
       flex-direction: column;
-      margin-block-end: 3rem;
     }
     .footer--brand > div{
       align-items: center;
@@ -1056,3 +1067,4 @@ p {
   -webkit-transition: -webkit-transform 325ms cubic-bezier(0.15, 0.65, 0.1, 1)!important;
   transition: all 325ms;
 }
+

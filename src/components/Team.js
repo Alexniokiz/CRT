@@ -49,7 +49,23 @@ const Team = () => {
                 <div className="bar-title2">
                     <p className="text-title inside" style={{color: '#d4c5a8'}}>THE TEAM</p>
                 </div>
+                <p className="text-paragraph2" style={{
+                    paddingLeft: "40px",
+                    fontFamily: 'Din'
+                }}>A project is only as extraordinary as its people, that’s why we teamed up the best people in their field to create Trillionaire Thugs. Our team is made of experts in the field of NFTs and video game development, with individuals that have been connected to social media since their creation.
+                    On top of that, the artists’ team are specialized in CGI & render animations for luxury companies.
+                    Mix everything and you will get the best potential for long term success as a NFTs collection!
+                    <br />
+                    <br />
+                    Here is a brief presentation of our key people:
+                </p>
                 <div class="col-12 team--wrapper pt-3 pt-lg-2" style={{padding: '10px', margin: "auto"}}>
+                    <div class="team--item col-lg-3 col-6">
+                        <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
+                    </div>
+                    <div class="team--item col-lg-3 col-6">
+                        <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
+                    </div>
                     <div class="team--item col-lg-3 col-6">
                         <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
                     </div>

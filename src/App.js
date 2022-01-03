@@ -12,6 +12,7 @@ import PresentationMobile from './components/PresentationMobile';
 import img1 from "./assets/paragraphe1.jpg";
 import img2 from "./assets/paragraphe2.jpg"
 import img3 from "./assets/paragraphe3.jpg"
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -36,9 +37,10 @@ const App = () => {
             <PresentationMobile int={1} pic={img1}/>
             <PresentationMobile int={2} pic={img2}/>
             <PresentationMobile int={3} pic={img3}/>
-            <FaqSection />
             <RoadMap />
             <Team />
+            <FaqSection />
+            <Footer />
           </div>
         </>
         }
