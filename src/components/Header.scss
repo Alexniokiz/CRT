@@ -5,7 +5,14 @@
     margin: auto 0;
     letter-spacing: 1.3px;
 }
-
+body::after{
+  position: absolute;
+  width:0;
+  height:0;
+  overflow:hidden;
+  z-index:-1; // hide images
+  content: url("../assets/big_img1.webp") url("../assets/big_img2.webp") url("../assets/big_img2.webp");   // load images
+}
 .bar-title {
     background: url("../assets/border_top.png");
     background-repeat: no-repeat;

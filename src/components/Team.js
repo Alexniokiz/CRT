@@ -1,7 +1,14 @@
 import React, { useEffect } from 'react'
 import "./Header.scss"
 
-import ProfilePic from "../assets/icon_team_1.png"
+import ProfilePic from "../assets/icon_team_1.webp"
+import ProfilePic2 from "../assets/icon_team_2.webp"
+import ProfilePic3 from "../assets/icon_team_3.webp"
+import ProfilePic4 from "../assets/icon_team_4.webp"
+import ProfilePic5 from "../assets/icon_team_5.webp"
+import ProfilePic6 from "../assets/icon_team_6.webp"
+
+
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
@@ -32,12 +39,12 @@ const Team = () => {
                                 Here is a brief presentation of our key people:
                             </p>
                             <div style={{display: "flex", height: 'fit-content', flexWrap: 'wrap', paddingLeft: "40px", marginTop: "30px"}}>
-                                <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
-                                <Profile name="ALEXANDRE ARNAUD" status="CO-FOUNDER"/>
-                                <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
-                                <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
-                                <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
-                                <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
+                                <Profile name="MARC L." status="PRODUCER" profilePic={ProfilePic}/>
+                                <Profile name="SAM R." status="MARKETING" profilePic={ProfilePic2}/>
+                                <Profile name="HAU N." status="ART DIRECTOR" profilePic={ProfilePic3}/>
+                                <Profile name="EMMANUEL J." status="3D ARTIST" profilePic={ProfilePic4}/>
+                                <Profile name="IEGOR A." status="BLOCKCHAIN EXPERT" profilePic={ProfilePic5}/>
+                                <Profile name="ALEX A." status="DEVELOPER" profilePic={ProfilePic6}/>
                             </div>
                         </div>
                     </div>
@@ -61,22 +68,22 @@ const Team = () => {
                 </p>
                 <div class="col-12 team--wrapper pt-3 pt-lg-2" style={{padding: '10px 20px', margin: "auto"}}>
                     <div class="team--item col-lg-3 col-6">
-                        <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
+                        <Profile name="MARC L." status="PRODUCER" profilePic={ProfilePic}/>
                     </div>
                     <div class="team--item col-lg-3 col-6">
-                        <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
+                        <Profile name="SAM R." status="MARKETING" profilePic={ProfilePic2}/>
                     </div>
                     <div class="team--item col-lg-3 col-6">
-                        <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
+                        <Profile name="HAU N." status="ART DIRECTOR" profilePic={ProfilePic3}/>
                     </div>
                     <div class="team--item col-lg-3 col-6">
-                        <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
+                        <Profile name="EMMANUEL J." status="3D ARTIST" profilePic={ProfilePic4}/>
                     </div>
                     <div class="team--item col-lg-3 col-6">
-                        <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
+                        <Profile name="IEGOR A." status="BLOCKCHAIN EXPERT" profilePic={ProfilePic5}/>
                     </div>
                     <div class="team--item col-lg-3 col-6">
-                        <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
+                        <Profile name="ALEX A." status="DEVELOPER" profilePic={ProfilePic6}/>
                     </div>
                 </div>
             </>}
@@ -88,7 +95,7 @@ const Profile = (props) => {
 
     return (
         <div style={window.innerWidth > 992 ? {margin: "auto 40px 15px 0"} : {}}>
-            <img src={ProfilePic} alt="team" width={window.innerWidth < 900 ? "160px" : "100%"}/>
+            <img src={props.profilePic} alt="team" width={window.innerWidth < 900 ? "160px" : "100%"}/>
             <p className="profile-name">{props.name}</p>
             <p className="profile-status">{props.status}</p>
         </div>

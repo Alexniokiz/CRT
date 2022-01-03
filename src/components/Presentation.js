@@ -3,7 +3,7 @@ import React from 'react'
 import './Header.scss'
 import './Presentation.css'
 import DiscordButton from "../assets/discordbutton.png";
-import Samourai from "../assets/samurai.png";
+import Samourai from "../assets/samurainew.webp";
 import "aos/dist/aos.css";
 
 const paragraph = [
@@ -63,7 +63,7 @@ const Presentation = (props) => {
                         <p className="text-title inside" style={{color: '#d4c5a8'}}>THE PROJECT</p>
                     </div>
                     <div className="bar-mid" style={{height: '620px'}}>
-                        <div style={{display: 'flex', flexDirection: 'row-reverse', maxWidth: '1150px', margin: 'auto'}}>
+                        <div style={{display: 'flex', flexDirection: 'row-reverse', maxWidth: '1150px', margin: 'auto', justifyContent: "space-between"}}>
                             <div className="decimal-text "></div>
                             <div style={{display: 'flex', flexDirection: 'column'}}>
                                 {paragraph[props.int].title}
@@ -71,7 +71,7 @@ const Presentation = (props) => {
                                     {paragraph[props.int].content}
                                 </div>
                             </div>
-                            <img src={Samourai}/>
+                            <img src={Samourai} width="45%"/>
                         </div>
                     </div>
                 </>

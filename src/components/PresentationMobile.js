@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 const paragraph = [
     {
         title: "TRILLIONAIRE THUGS",
-        content: "The Trillionaire Thugs’ collection brings the hip hop and urban scene to the NFT market. This universe is not very well represented even though it is an important part of the hype and is in line with the times. Many hip hop characters embody success and achievement nowadays. Our characters are thugs who evolve in a hype universe and who have been digitized by talented artists to give them life in the Metaverse. By joining the community, you may be making the best investment of your life. Be part of this new financial era where being cool and rich is more compatible than ever!",
+        content: "Trillionaire Thugs is a collection of 7,777 NFTs, each representing a Thug as a digitized piece of 3D art. With more than 300 traits in 3D, our collection will be one of the most diverse and detailed on the market. (modifié)",
     },
     {
         title: "BE PART OF THE GANG!",

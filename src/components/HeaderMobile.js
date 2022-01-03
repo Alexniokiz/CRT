@@ -2,9 +2,9 @@ import React from 'react'
 import './Header.scss'
 import logo from '../assets/logo.png'
 
-import img1 from '../../src/assets/mobile_slider1.webp';
-import img2 from '../../src/assets/mobile_slider2.webp';
-import img3 from '../../src/assets/mobile_slider3.webp';
+// import img1 from '../../src/assets/mobile_slider1.webp';
+// import img2 from '../../src/assets/mobile_slider2.webp';
+// import img3 from '../../src/assets/mobile_slider3.webp';
 
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
@@ -16,9 +16,9 @@ const Header = () => {
     return (
       <>
         <header>
-          <img src={img1} width="0px" style={{display: 'none'}}/>
+          {/* <img src={img1} width="0px" style={{display: 'none'}}/>
           <img src={img2} width="0px" style={{display: 'none'}}/>
-          <img src={img3} width="0px" style={{display: 'none'}}/>
+          <img src={img3} width="0px" style={{display: 'none'}}/> */}
           <div style={{height: "inherit"}} className="container-fluid">
             <nav style={{height: "inherit"}}className="navbar navbar-expand-xl justify-content-between ">
               <a href="/#root" className="navbar-brand flex-grow-1" style={{display: 'flex'}}>
