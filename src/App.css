@@ -21,7 +21,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .App {
-  background: url("./assets/fondsale.png"), #242426;
+  background: url("./assets/fondsale.webp"), #242426;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
