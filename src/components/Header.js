@@ -43,7 +43,7 @@ const Header = () => {
                                     9999
                                     <span>9999</span>
                                 </div> */}
-                                <span style={{fontSize: "160px", color: "black"}}>9999</span>
+                                <span style={{fontSize: "160px", color: "black"}}>7777</span>
                                 <span style={{fontSize: "95px", color: "white"}}>UNIQUE</span>
                                 <span style={{fontSize: "185px", color: "white"}}>NFT</span>
                                 {/* <div className="glitch" style={{fontSize: "186px", color: "white"}}>
@@ -55,14 +55,14 @@ const Header = () => {
                         </div>
                         <div className="container-main2">
                             <div className="text-main" style={{paddingTop: '230px'}}>
-                                <span style={{fontSize: "88px"}}>RELEASE</span>
+                                <span style={{fontSize: "88px", color: "black"}}>RELEASE</span>
                                 <span style={{fontSize: "125px", color: "white"}}>EARLY</span>
                                 <span style={{fontSize: "81px", color: "white"}}>JANUARY</span>
                             </div>
                         </div>
                         <div className="container-main3">
                             <div className="text-main">
-                                <span style={{fontSize: "171px"}}>GET</span>
+                                <span style={{fontSize: "171px", color: "black"}}>GET</span>
                                 <span style={{fontSize: "85px", color: "white"}}>ACCESS</span>
                                 <span style={{fontSize: "95px", color: "white"}}>TO THE</span>
                                 <span style={{fontSize: "63px", color: "white"}}>WHITELIST</span>
