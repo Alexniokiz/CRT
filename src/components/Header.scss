@@ -804,6 +804,14 @@ p {
   }
   
   @media screen and (max-width: 992px) {
+    body::after{
+      position: absolute;
+      width:0;
+      height:0;
+      overflow:hidden;
+      z-index:-1; // hide images
+      content: url("../assets/mobile_slider1.jpg") url("../assets/mobile_slider2.jpg") url("../assets/mobile_slider3.jpg");   // load images
+    }
     footer {
       // padding-block-start: 65px;
       // padding-block-end: 65px;
