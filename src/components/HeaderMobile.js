@@ -2,9 +2,9 @@ import React from 'react'
 import './Header.scss'
 import logo from '../assets/logo.png'
 
-import img1 from '../../src/assets/mobile_slider1.jpg';
-import img2 from '../../src/assets/mobile_slider2.jpg';
-import img3 from '../../src/assets/mobile_slider3.jpg';
+import img1 from '../../src/assets/mobile_slider1.webp';
+import img2 from '../../src/assets/mobile_slider2.webp';
+import img3 from '../../src/assets/mobile_slider3.webp';
 
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
