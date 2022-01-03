@@ -1,5 +1,5 @@
 .card-to-rotate {
-    background: url('../assets/tugoune2.png');
+    background: url('../assets/tugoune2.webp');
     width: 350px;
     height: 405px;
     animation: 2s cubic-bezier(0.79, 0.01, 0.34, 0.99) infinite alternate-reverse slidein;
@@ -12,7 +12,7 @@
 }
 
 .card-to-rotate2 {
-    background: url('../assets/tugoune.png');
+    background: url('../assets/tugoune.webp');
     width: 350px;
     height: 405px;
     animation: 2s cubic-bezier(0.79, 0.01, 0.34, 0.99) infinite alternate-reverse slidein2;
@@ -40,7 +40,7 @@
 /* MOBILE */
 @media screen and (max-width: 900px) {
     .card-to-rotate {
-        background: url('../assets/tugoune2.png');
+        background: url('../assets/tugoune2.webp');
         width: 250px;
         height: 290px;
         background-size: cover;
@@ -54,7 +54,7 @@
     }
     
     .card-to-rotate2 {
-        background: url('../assets/tugoune.png');
+        background: url('../assets/tugoune.webp');
         width: 250px;
         height: 290px;
         background-size: cover;

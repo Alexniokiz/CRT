@@ -5,10 +5,10 @@ const Footer = () => {
     return (
         <footer style={{transform: 'translateZ(50px)'}}>
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-6 col-12 footer--social-container">
-                        <div className="social--wrapper" style={{width: "40%"}}>
-                            <h6 style={{fontSize: "18px", textAlign: "center", color: "white"}} className="text-uppercase mb-3 fw-bold">follow us</h6>
+                <div className="row" style={{display: 'flex', flexDirection: 'column'}}>
+                    <div className={window.innerWidth > 992 ? "col-12 footer--social-container" : "col-lg-6 col-12 footer--social-container"}>
+                        <div className="social--wrapper" style={window.innerWidth > 992 ? {width: '10vw'} : {}}>
+                            <h6 style={{fontSize: "28px", textAlign: "center", color: "white"}} className="text-uppercase mb-3 fw-bold">follow us</h6>
                             <div className="d-flex align-items-center">
                                 <a className="blacck nav-link nav-link_icon" href="https://www.instagram.com/trillionairethugs/" target="_blank" rel="noreferrer">
                                     <svg className="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
@@ -34,12 +34,12 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-12 footer--brand" style={{ margin: "auto"}}>
+                    <div className="col-lg-6 col-12 footer--brand" style={{ margin: "auto", textAlign: 'center'}}>
                         <div>
                             <a href="/#root" >
                             {window.innerWidth > 992 ? <img src={logo} alt="logo" className="w-25 max-width-65" width="100%"/> : <img src={logo} alt="logo" className="w-100 max-width-65"/>}
                             </a>
-                            <h6 style={{fontSize: "18px", color: "white", marginTop: "10px"}} >© 2022 TrillionaireThugs. All rights reserved</h6>
+                            <h6 style={{fontSize: "18px", color: "white", marginTop: "20px"}} >© 2022 TrillionaireThugs. All rights reserved</h6>
                         </div>
                     </div>
                 </div>

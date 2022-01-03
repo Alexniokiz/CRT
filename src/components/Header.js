@@ -35,7 +35,7 @@ const Header = () => {
                 <img src={leftShadow}/> */}
                 <div className="container-left">
                 </div>
-                    <AutoplaySlider play={true} buttons={true} interval={3000}>
+                    <AutoplaySlider play={false} buttons={true} interval={3000}>
                         <div className="container-main">
                             <div className="text-main">
                                 {/* <div className="glitch" style={{fontSize: "158px"}}>
@@ -43,9 +43,9 @@ const Header = () => {
                                     9999
                                     <span>9999</span>
                                 </div> */}
-                                <span style={{fontSize: "160px", color: "black"}}>7777</span>
+                                <span style={{fontSize: "175px", color: "black"}}>7777</span>
                                 <span style={{fontSize: "95px", color: "white"}}>UNIQUE</span>
-                                <span style={{fontSize: "185px", color: "white"}}>NFT</span>
+                                <span style={{fontSize: "140px", color: "white"}}>NFTS</span>
                                 {/* <div className="glitch" style={{fontSize: "186px", color: "white"}}>
                                     <span>NFT</span>
                                     NFT
@@ -55,9 +55,9 @@ const Header = () => {
                         </div>
                         <div className="container-main2">
                             <div className="text-main" style={{paddingTop: '230px'}}>
-                                <span style={{fontSize: "88px", color: "black"}}>RELEASE</span>
-                                <span style={{fontSize: "125px", color: "white"}}>EARLY</span>
-                                <span style={{fontSize: "81px", color: "white"}}>JANUARY</span>
+                                <span style={{fontSize: "96px", color: "black"}}>RELEASE</span>
+                                <span style={{fontSize: "115px", color: "white"}}>END OF</span>
+                                <span style={{fontSize: "87px", color: "white"}}>JANUARY</span>
                             </div>
                         </div>
                         <div className="container-main3">
