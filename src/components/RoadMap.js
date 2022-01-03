@@ -102,14 +102,14 @@ const RoadMap = () => {
                         <div className="decimal-text inside"></div>
                         <div style={{width: '15vw'}}>
                             <p data-aos="fade-right" className="phase-count" style={{paddingTop: '65px', textAlign: "center"}}>PHASE 1</p>
-                            <p style={{
+                            <p data-aos="fade-right" style={{
                                 width: "60%",
                                 textAlign: "center",
                                 margin: "auto",
                                 color: "rgb(98, 97, 97)"
                             }}>LAUNCH OF THE COLLECTION</p>
                             <p data-aos="fade-right" className="phase-count" style={{paddingTop: '135px', textAlign: "center"}}>PHASE 2</p>
-                            <p style={{
+                            <p data-aos="fade-right" style={{
                                 width: "65%",
                                 textAlign: "center",
                                 margin: "auto",
@@ -117,7 +117,7 @@ const RoadMap = () => {
                                 color: "rgb(98, 97, 97)"
                             }}>Access to the Gang</p>
                             <p data-aos="fade-right" className="phase-count" style={{paddingTop: '115px', textAlign: "center"}}>PHASE 3</p>
-                            <p style={{
+                            <p data-aos="fade-right" style={{
                                 width: "65%",
                                 textAlign: "center",
                                 margin: "auto",
@@ -125,7 +125,7 @@ const RoadMap = () => {
                                 color: "rgb(98, 97, 97)"
                             }}>Merchandising release</p>
                             <p data-aos="fade-right" className="phase-count" style={{paddingTop: '125px', textAlign: "center"}}>PHASE 4</p>
-                            <p style={{
+                            <p data-aos="fade-right" style={{
                                 width: "65%",
                                 textAlign: "center",
                                 margin: "auto",
@@ -133,7 +133,7 @@ const RoadMap = () => {
                                 color: "rgb(98, 97, 97)"
                             }}>New collection Drop</p>
                             <p data-aos="fade-right" className="phase-count" style={{paddingTop: '125px', textAlign: "center"}}>PHASE 5</p>
-                            <p style={{
+                            <p data-aos="fade-right" style={{
                                 width: "65%",
                                 textAlign: "center",
                                 margin: "auto",
@@ -141,7 +141,7 @@ const RoadMap = () => {
                                 color: "rgb(98, 97, 97)"
                             }}>Fusion of the NFT</p>
                             <p data-aos="fade-right" className="phase-count" style={{paddingTop: '125px', textAlign: "center"}}>PHASE 6</p>
-                            <p style={{
+                            <p data-aos="fade-right" style={{
                                 width: "60%",
                                 textAlign: "center",
                                 margin: "auto",
