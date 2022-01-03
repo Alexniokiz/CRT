@@ -35,7 +35,7 @@ const Header = () => {
                 <img src={leftShadow}/> */}
                 <div className="container-left">
                 </div>
-                    <AutoplaySlider play={false} buttons={true} interval={3000}>
+                    <AutoplaySlider play={true} buttons={true} interval={3000}>
                         <div className="container-main">
                             <div className="text-main">
                                 {/* <div className="glitch" style={{fontSize: "158px"}}>
