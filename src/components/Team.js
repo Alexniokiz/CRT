@@ -31,7 +31,7 @@ const Team = () => {
                             <br />
                             Here is a brief presentation of our key people:
                         </p>
-                        <div style={{display: "flex", height: 'fit-content', flexWrap: 'wrap'}}>
+                        <div style={{display: "flex", height: 'fit-content', flexWrap: 'wrap', paddingLeft: "40px"}}>
                             <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
                             <Profile name="ALEXANDRE ARNAUD" status="CO-FOUNDER"/>
                             <Profile name="MARC LEJEUNE" status="CO-FOUNDER"/>
@@ -87,7 +87,7 @@ const Team = () => {
 const Profile = (props) => {
 
     return (
-        <div style={{margin: "auto"}}>
+        <div style={{margin: "auto 40px 15px 0"}}>
             <img src={ProfilePic} alt="team" width={window.innerWidth < 900 ? "160px" : "100%"}/>
             <p className="profile-name">{props.name}</p>
             <p className="profile-status">{props.status}</p>

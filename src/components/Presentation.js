@@ -2,7 +2,8 @@ import React from 'react'
 
 import './Header.scss'
 import './Presentation.css'
-
+import DiscordButton from "../assets/discordbutton.png";
+import Samourai from "../assets/samurai.png";
 import "aos/dist/aos.css";
 
 const paragraph = [
@@ -28,40 +29,64 @@ const Presentation = (props) => {
     //     AOS.init({ duration: 1000, once: false });
     // }, [])
     return (
+        
         <div data-aos="fade-up" data-aos-offset="150">
-            <div className="bar-mid-top"></div>
-            <div className="bar-title2">
-                <p className="text-title inside" style={{color: '#d4c5a8'}}>THE PROJECT</p>
-            </div>
-            <div className="bar-mid" style={{height: '620px'}}>
-                <div style={{display: 'flex', flexDirection: 'row', maxWidth: '1150px'}}>
-                    <div className="decimal-text inside"></div>
-                    <div style={{display: 'flex', flexDirection: 'column'}}>
-                        {paragraph[props.int].title}
-                        <div style={{display: 'flex'}}>
-                            <div>
-                                {paragraph[props.int].content}
-                                { props.int == 0 ? 
-                                    <>
-                                        <a style={{width: "100%"}} className="nav-link nav-link_icon nav-link_icon-fluid rounded-3" href="https://discord.gg/HUsz85w9" target="_blank" rel="noreferrer">
-                                            <span className="" style={{fontFamily: "Brandon", textTransform: "initial", fontSize: "22px", color: "black"}}>Join our discord</span>
-                                        </a>
-                                    </>
-                                : 
-                                    <></>
-                                }
+            { props.int == 0 ? 
+            <>
+                <div className="bar-mid-top"></div>
+                <div className="bar-title2">
+                    <p className="text-title inside" style={{color: '#d4c5a8'}}>THE PROJECT</p>
+                </div>
+                <div className="bar-mid" style={{height: '620px'}}>
+                    <div style={{display: 'flex', flexDirection: 'row', maxWidth: '1150px'}}>
+                        <div className="decimal-text inside"></div>
+                        <div style={{display: 'flex', flexDirection: 'column'}}>
+                            {paragraph[props.int].title}
+                            <div style={{display: 'inline-flex'}}>
+                                <div>
+                                    {paragraph[props.int].content}
+                                        <>
+                                            <a style={{width: "100%"}} className="text-paragraph2" href="https://discord.gg/HUsz85w9" target="_blank" rel="noreferrer">
+                                                <img src={DiscordButton} alt="Discord"/>
+                                            </a>
+                                        </>
+                                </div>
+                                        <div className="card-to-rotate"></div>
+                                        <div className="card-to-rotate2"></div>
                             </div>
-                            <div className="card-to-rotate"></div>
-                            <div className="card-to-rotate2"></div>
                         </div>
-                        {/* <p className='text-paragraph2' style={{color: '#626161', fontFamily: 'Brandon', fontSize: '22px', margin: '0', paddingTop: '40px'}}>BE PART OF THE GANG!</p>
-                        <p className="text-paragraph2" style={{maxWidth: '500px', paddingTop: '20px', fontFamily: 'Din'}}>Your NFT is both an investment and a key that can open the doors to a premium community, which is called Trillionaire Thugs’ Gang and that will give you access to many exciting rewards and awesome events!
-                        Owning a Trillionaire Thug NFT means that, more than just owning a piece of art, you are part of a gang which grants you access to various benefits that will grow over time such as Merch and a free NFT collection drop. 
-                        The first two big events will come up in February 2022, following the launch of the collection,in Miami & Dubai. Everyone among the holders will have a chance to get tickets.
-                        </p> */}
                     </div>
                 </div>
-            </div>
+            </>
+            : props.int == 1 ?
+                <>
+                    <div className="bar-mid-top"></div>
+                    <div className="bar-title2">
+                        <p className="text-title inside" style={{color: '#d4c5a8'}}>THE PROJECT</p>
+                    </div>
+                    <div className="bar-mid" style={{height: '620px'}}>
+                        <div style={{display: 'flex', flexDirection: 'row-reverse', maxWidth: '1150px', margin: 'auto'}}>
+                            <div className="decimal-text "></div>
+                            <div style={{display: 'flex', flexDirection: 'column'}}>
+                                {paragraph[props.int].title}
+                                <div style={{display: 'inline-flex'}}>
+                                    <div>
+                                        {paragraph[props.int].content}
+                                            <>
+                                                <a style={{width: "100%"}} className="text-paragraph2" href="https://discord.gg/HUsz85w9" target="_blank" rel="noreferrer">
+                                                    <img src={DiscordButton} alt="Discord"/>
+                                                </a>
+                                            </>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src={Samourai}/>
+                        </div>
+                    </div>
+                </>
+                :
+                <></>
+            }
             <div className="bar-bottom"></div>
         </div>
     )

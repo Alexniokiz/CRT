@@ -24,10 +24,10 @@ const App = () => {
           <Presentation int={0}/>
           <Presentation int={1}/>
           <Presentation int={2}/>
-          <Presentation int={3}/>
           <RoadMap />
           <Team />
           <FaqSection />
+          <Footer />
         </>
         :
         <>

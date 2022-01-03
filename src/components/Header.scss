@@ -462,7 +462,9 @@ p {
     text-transform: uppercase;
     transition: color 0.5s ease;
   }
-  
+  .blacck {
+    color: #000!important;
+  }
   .nav-link:not(.nav-link_icon) {
     padding-inline-end: 14px !important;
     padding-inline-start: 14px !important;
@@ -531,7 +533,7 @@ p {
     width: 190px;
     height: 50px;
     line-height: 50px;
-    color: #000;
+    color: #000!important;
     background: #fff;
     flex-shrink: 0;
     border-radius: 0;
@@ -653,7 +655,6 @@ p {
     padding-block-start: 45px;
     padding-block-end: 45px;
     min-height: 400px;
-    background-color: #272727;
   }
   
   
