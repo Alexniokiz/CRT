@@ -10,12 +10,18 @@ const RoadMap = () => {
     const handleScroll = () => {
         let totalHeight = document.body.scrollHeight - window.innerHeight;
         let position = window.pageYOffset;
-        if (position < 4000) return setScrollPosition(0);
-        if (position > 5200) return setScrollPosition(86);
+        if (window.innerHeight  < 1100) {
+            if (position < 4000) return setScrollPosition(0);
+            if (position > 5200) return setScrollPosition(86);
+            let progressHeight = ((position - 4000) / 1400) * 100;
+            setScrollPosition(progressHeight);
+        } else {
+            if (position < 3600) return setScrollPosition(0);
+            if (position > 4800) return setScrollPosition(86);
+            let progressHeight = ((position - 3600) / 1400) * 100;
+            setScrollPosition(progressHeight);
+        }
 
-        let progressHeight = ((position - 4000) / 1400) * 100;
-
-        setScrollPosition(progressHeight);
     };
     
     useEffect(() => {
