@@ -85,7 +85,7 @@ const Header = () => {
                 <p className="text-title">GET READY THUGS!</p>
             </div>
             <div className="bar-mid">
-                <p className="text-paragraph">Trillionaire Thugs is a collection of 7,777 NFTs, each representing a Thug as a digitized piece of 3D art. With more than 300 traits in 3D, our collection will be one of the most diverse and detailed on the market. Our goal is to build a community around the hype of the hip hop universe. The models to follow are no longer in suits, but in sneakers, their crypto wallets often being more loaded!</p>
+                <p className="text-paragraph">Trillionaire Thugs is a <b style={{color: "#f7c02e"}}>collection of 7,777 NFTs</b>, each representing a Thug as a digitized piece of 3D art. With more than <b style={{color: "#f7c02e"}}>300 traits in 3D</b>, our collection will be one of the most diverse and detailed on the market. Our goal is to build a <b style={{color: "#f7c02e"}}>community</b> around the <b style={{color: "#f7c02e"}}>hype</b> of the hip hop universe. The models to follow are no longer in suits, but in sneakers, their crypto wallets often being more loaded!</p>
             </div>
             <div className="bar-bottom"></div>
         </>
