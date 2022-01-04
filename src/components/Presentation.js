@@ -45,7 +45,7 @@ const Presentation = (props) => {
                             <div style={{display: 'inline-flex'}}>
                                 <div style={{display: 'flex', flexDirection: 'column'}}>
                                     {paragraph[props.int].content}
-                                    <a style={{width: "100%"}} className="text-paragraph2" href="https://discord.gg/HUsz85w9" target="_blank" rel="noreferrer">
+                                    <a style={{width: "100%"}} className="text-paragraph2" href="https://discord.gg/dRXdesRN63" target="_blank" rel="noreferrer">
                                         <img src={DiscordButton} alt="Discord"/>
                                     </a>
                                 </div>
