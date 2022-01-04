@@ -59,8 +59,8 @@ const Team = () => {
                 <p className="text-paragraph2" style={{
                     paddingLeft: "40px",
                     fontFamily: 'Din'
-                }}>A project is only as extraordinary as its people, that’s why we <b style={{color: "#f7c02e"}}>teamed up the best people in their field</b> to create Trillionaire Thugs. Our team is made of <b style={{color: "#f7c02e"}}>experts in the field of NFTs</b> and <b style={{color: "#f7c02e"}}>video game development</b>, with individuals that have been connected to social media since their creation.
-                    On top of that, the artists’ team are specialized in <b style={{color: "#f7c02e"}}>CGI & render animations</b> for luxury companies.
+                }}>A project is only as extraordinary as its people, that’s why we <b style={{color: "#f7c02e", fontFamily: "Din"}}>teamed up the best people in their field</b> to create Trillionaire Thugs. Our team is made of <b style={{color: "#f7c02e", fontFamily: "Din"}}>experts in the field of NFTs</b> and <b style={{color: "#f7c02e", fontFamily: "Din"}}>video game development</b>, with individuals that have been connected to social media since their creation.
+                    On top of that, the artists’ team are specialized in <b style={{color: "#f7c02e", fontFamily: "Din"}}>CGI & render animations</b> for luxury companies.
                     Mix everything and you will get the best potential for long term success as a NFTs collection!
                     <br />
                     <br />
