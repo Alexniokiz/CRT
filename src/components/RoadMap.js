@@ -11,22 +11,20 @@ const RoadMap = () => {
         let totalHeight = document.body.scrollHeight - window.innerHeight;
         let position = window.pageYOffset;
         if (window.innerHeight  < 1100) {
-            if (position < 3800) return setScrollPosition(0);
-            if (position > 5000) return setScrollPosition(86);
-            let progressHeight = ((position - 3800) / 1400) * 100;
+            if (position < 3200) return setScrollPosition(0);
+            if (position > 4100) return setScrollPosition(86);
+            let progressHeight = ((position - 3200) / 1100) * 100;
             setScrollPosition(progressHeight);
         } else {
-            if (position < 3400) return setScrollPosition(0);
-            if (position > 4600) return setScrollPosition(86);
-            let progressHeight = ((position - 3400) / 1400) * 100;
+            if (position < 2900) return setScrollPosition(0);
+            if (position > 4000) return setScrollPosition(86);
+            let progressHeight = ((position - 2900) / 1300) * 100;
             setScrollPosition(progressHeight);
         }
-
     };
     
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
-    
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -35,7 +33,6 @@ const RoadMap = () => {
     useEffect(() => {
         AOS.init({ duration: 1000, once: true, offset: 300 });
     }, [])
-    console.log(scrollPosition);
     return (
         <section id="roadmap">
             {window.innerWidth < 992 ?

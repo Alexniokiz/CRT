@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row" style={{display: 'flex', flexDirection: 'column'}}>
                     <div className={window.innerWidth > 992 ? "col-12 footer--social-container" : "col-lg-6 col-12 footer--social-container"}>
-                        <div className="social--wrapper" style={window.innerWidth > 992 ? {width: '10vw'} : {}}>
+                        <div className="social--wrapper" style={window.innerWidth > 992 ? {width: '15vw'} : {}}>
                             <h6 style={{fontSize: "28px", textAlign: "center", color: "white"}} className="text-uppercase mb-3 fw-bold">follow us</h6>
                             <div className="d-flex align-items-center">
                                 <a className="blacck nav-link nav-link_icon" href="https://www.instagram.com/trillionairethugs/" target="_blank" rel="noreferrer">
@@ -29,9 +29,6 @@ const Footer = () => {
                                     </svg>
                                 </a>
                             </div>
-                            <a style={{width: "100%"}} className="nav-link nav-link_icon nav-link_icon-fluid rounded-3" href="https://discord.gg/trillionairethugs" target="_blank" rel="noreferrer">
-                                <span className="" style={{fontFamily: "Brandon", textTransform: "initial", fontSize: "22px", color: 'black'}}>Join our discord</span>
-                            </a>
                         </div>
                     </div>
                     <div className="col-lg-6 col-12 footer--brand" style={{ margin: "auto", textAlign: 'center'}}>
