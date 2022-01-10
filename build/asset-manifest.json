@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.697053e2.chunk.css",
+    "main.js": "/static/js/main.25064b66.chunk.js",
+    "main.js.map": "/static/js/main.25064b66.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4b1ad2bf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4b1ad2bf.js.map",
+    "static/css/2.8bc996c0.chunk.css": "/static/css/2.8bc996c0.chunk.css",
+    "static/js/2.19aaeffc.chunk.js": "/static/js/2.19aaeffc.chunk.js",
+    "static/js/2.19aaeffc.chunk.js.map": "/static/js/2.19aaeffc.chunk.js.map",
+    "static/js/3.cd5b5c53.chunk.js": "/static/js/3.cd5b5c53.chunk.js",
+    "static/js/3.cd5b5c53.chunk.js.map": "/static/js/3.cd5b5c53.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.8bc996c0.chunk.css.map": "/static/css/2.8bc996c0.chunk.css.map",
+    "static/css/main.697053e2.chunk.css.map": "/static/css/main.697053e2.chunk.css.map",
+    "static/js/2.19aaeffc.chunk.js.LICENSE.txt": "/static/js/2.19aaeffc.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/fondsale.32125528.webp",
+    "static/media/Header.scss": "/static/media/verticaltest.0e5c78c6.png",
+    "static/media/icon_team_1.86ef72f1.webp": "/static/media/icon_team_1.86ef72f1.webp",
+    "static/media/icon_team_2.2b72dbf0.webp": "/static/media/icon_team_2.2b72dbf0.webp",
+    "static/media/icon_team_3.7569b637.webp": "/static/media/icon_team_3.7569b637.webp",
+    "static/media/icon_team_4.7d152ab8.webp": "/static/media/icon_team_4.7d152ab8.webp",
+    "static/media/icon_team_5.0e256eef.webp": "/static/media/icon_team_5.0e256eef.webp",
+    "static/media/icon_team_6.5f580399.webp": "/static/media/icon_team_6.5f580399.webp",
+    "static/media/paragraphe1.c2dced96.jpg": "/static/media/paragraphe1.c2dced96.jpg",
+    "static/media/paragraphe2.489bc21d.jpg": "/static/media/paragraphe2.489bc21d.jpg",
+    "static/media/paragraphe3.a6e0674b.jpg": "/static/media/paragraphe3.a6e0674b.jpg",
+    "static/media/samurainew.f43a4539.webp": "/static/media/samurainew.f43a4539.webp",
+    "static/media/Presentation.css": "/static/media/tugoune2.3a239348.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b1ad2bf.js",
+    "static/css/2.8bc996c0.chunk.css",
+    "static/js/2.19aaeffc.chunk.js",
+    "static/css/main.697053e2.chunk.css",
+    "static/js/main.25064b66.chunk.js"
+  ]
+}
