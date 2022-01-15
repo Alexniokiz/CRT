@@ -176,7 +176,7 @@ const RoadMap = () => {
                                     <span class="roadmap--point-inside"></span>
                                 </span>
                                 <div data-aos="fade-left"  className="carton c4">
-                                    <p className="contenu-description">Long-term holders (30 days or more) will have access to a free drop of a new NFTs collection of weapons that can be merged with the first collection. Newcomers to the project will also have the opportunity to acquire items from this new drop on through a new mint or OpenSea.</p>
+                                    <p className="contenu-description">Long-term holders (30 days or more) will have access to a free drop of a new NFTs collection of weapons that can be merged with the first collection. Newcomers to the project will also have the opportunity to acquire items from this new drop through a new mint or OpenSea.</p>
                                 </div>
                                 <span class="roadmap--point pad-point">
                                     <span class="roadmap--point-inside"></span>
